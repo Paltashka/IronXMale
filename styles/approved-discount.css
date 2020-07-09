@@ -1,0 +1,350 @@
+html, body {
+    margin: auto;
+    padding: auto;
+    min-width: fit-content;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #980B0B 0%, #DB3434 105.77%);
+}
+
+.header span {
+    text-transform: uppercase;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-left: 33px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 65px;
+}
+
+.discount-product {
+    display: flex;
+}
+
+.discount-text-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 52px;
+}
+
+.title span {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 21px;
+}
+
+.subtext span {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 16px;
+}
+
+.prices {
+    margin-top: 43px;
+    display: flex;
+    align-items: center;
+}
+
+.discounted-price span {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 21px;
+    margin-right: 14px;
+}
+
+.original-price span {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 21px;
+    text-decoration-line: line-through;
+    color: #CD3535;
+}
+
+.discount-dash {
+    width: 570px;
+    height: 1px;
+    background: #C4C4C4;
+    opacity: 0.2;
+    margin-top: 49px;
+}
+
+.discount-footer-text {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.discount-text-block-footer {
+    margin-top: 24px;
+}
+
+.packages-left {
+    width: 166px;
+    height: 26px;
+    padding: 5px;
+    background: linear-gradient(90deg, #980B0B 0%, #DB3434 105.77%);
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.give-discount-block {
+    height: 172px;
+    width: 970px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(95.79deg, #1A2F61 0.48%, #224087 99.62%);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.give-discount-block span {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.underlined {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-bottom: solid;
+    border-bottom-color: #FBDB85;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.give-discount-btn {
+    width: 364px;
+    height: 62px;
+    background: #CD3535;
+    border-radius: 10px;
+    border-style: outset;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.give-discount-btn span {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.give-discount-bottom-text {
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+
+.give-discount-bottom-text span {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.statement-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 970px;
+    height: 110px   ;
+    background: #FAFBFF;
+    border-radius: 10px;
+}
+
+.statement-block span {
+    margin-top: 18px;
+    margin-bottom: 29px;
+    margin-left: 31px;
+    margin-right: 32px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    height: 78px;
+    margin-top: 14px;
+}
+
+.dmca-protected img {
+    width: 150px;
+    height: 30px;
+}
+
+.footer-links {
+    width: 324px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.footer-link-item a {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.reserved span {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        width: 320px;
+        justify-content: unset;
+    }
+    .header img {
+        margin-left: 32px;
+    }
+    .header span {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin-right: 36px;
+    }
+    .content {
+        align-items: unset;
+    }
+    .title span {
+        display: none;
+    }
+    .discount-product {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+    }
+    .prices {
+        display: flex;
+        flex-direction: column;
+    }
+    .product-img-block {
+        text-align: center;
+    }
+    .discount-text-block {
+        margin-left: 0;
+    }
+    .discount-dash {
+        width: 285px;
+    }
+    .subtext {
+        text-align: center;
+    }
+    .discount-text-block-footer {
+        text-align: center;
+    }
+    .give-discount-block {
+        border-radius: 0px;
+    }
+    .give-discount-block {
+        width: 320px;
+        text-align: center;
+    }
+    .give-discount-block span {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 26px;
+        color: #FFFFFF;
+        flex-direction: column;
+    }
+    .give-discount-btn {
+        width: auto;
+    }
+    .give-discount-bottom-text {
+        width: 320px;
+        display: flex;
+        text-align: center;
+    }
+    .statement-block {
+        width: auto;
+        height: auto;
+        padding: 5px;
+    }
+    .statement-block span {
+        margin: 0;
+    }
+    .footer {
+        width: 320px;
+        flex-direction: column-reverse;
+        height: 200px;
+    }
+    .footer-links {
+        width: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+}

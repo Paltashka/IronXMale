@@ -1,0 +1,133 @@
+html, body {
+    margin: auto;
+    padding: auto;
+    min-width: fit-content;
+}
+
+.main {
+    width: 770px;
+    height: 550px;
+    padding: 5px;
+}
+
+.close-btn-icon {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.selected-supply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-supply span {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.product-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 39px;
+}
+
+.price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 41px;
+    text-align: center;
+}
+
+.price-text {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #081F65;
+}
+
+.supply-period {
+    text-align: center;
+}
+
+.choose-seller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.choose-seller-btn {
+    width: 304px;
+    height: 64px;
+    border: none;
+    background: linear-gradient(360deg, #E16808 -7.81%, #FFA526 100%);
+    border: 1px solid #E56F0B;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.choose-seller-btn span {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.close-btn-block {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .close-btn-icon {
+        display: none;
+    }
+    .main {
+        width: auto;
+        margin-top: 59px;
+    }
+    .close-btn-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13px;
+    }
+    .close-btn {
+        width: 288px;
+        height: 58px;
+    }
+    .close-btn span {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .choose-seller-btn {
+        width: 288px;
+    }
+}

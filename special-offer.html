@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/special-offer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="expires-in">
+      <span>Offer expires in</span>
+      <div class="expire-time">
+        <div class="expire-time-item">
+          <span>04</span>
+        </div>
+        <div class="expire-time-item">
+          <span>12</span>
+        </div>
+      </div>
+    </div>
+    <div class="offer-with-price">
+      <div class="special-offer">
+        <span>Special offer:</span>
+      </div>
+      <div class="price-with-discount">
+        <span class="price">
+          Price: <span class="original-price">$539.70</span> $199.99
+          <span class="discount-percentage">(67% Discount)</span>
+        </span>
+      </div>
+    </div>
+    <div class="order-block">
+      <div class="choose-order">
+        <img src="images/product-group.png" />
+        <button class="free-shipping-btn">
+          <span class="free-shipping-btn-bold-text"
+            >Free Shipping
+            <span class="free-shipping-btn-text">on all order</span>
+            today!</span
+          >
+        </button>
+        <div class="steps">
+          <div class="first-step-wrapper">
+            <div class="first-step">
+              <span class="first-step-text">1 Step</span>
+            </div>
+            <span class="choose-order-text">Choose Your Offer</span>
+          </div>
+          <div class="supply-list">
+            <div class="supply-item">
+              <input class="supply-radiobtn" type="radio" id="supply" />
+              <!-- <div class="supply-radiobtn"></div> -->
+              <div class="supply-price-wrapper">
+                <div class="supply-price">
+                  <span class="supply-period">1 Month Supply</span>
+                  <span class="supply-price-text">$49.95</span>
+                </div>
+                <div class="supply-discount-price">
+                  <span class="supply-discount-percentage"
+                    >51% Discount ($49.95/EACH)</span
+                  >
+                  <span class="supply-discount-price-text">$99.95</span>
+                </div>
+              </div>
+            </div>
+            <div class="supply-best-seller-item">
+              <input class="supply-radiobtn" type="radio" id="supply" />
+              <div class="supply-price-wrapper">
+                <div class="supply-price">
+                  <span class="supply-period">1 Month Supply</span>
+                  <span class="supply-price-text">$49.95</span>
+                </div>
+                <div class="supply-discount-price">
+                  <span class="supply-discount-percentage"
+                    >51% Discount ($49.95/EACH)</span
+                  >
+                  <span class="supply-discount-price-text">$99.95</span>
+                </div>
+              </div>
+            </div>
+            <div class="best-seller-block">
+              <span>Best-Seller</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-information">
+        <div class="second-step-wrapper">
+          <div class="second-step">
+            <span class="second-step-text">2 Step</span>
+          </div>
+          <span class="contact-information-text">Contact Information</span>
+        </div>
+        <div class="form-block">
+          <form>
+            <input
+              class="form-input"
+              type="text"
+              id="fname"
+              placeholder="First Name"
+            />
+            <input
+              class="form-input"
+              type="text"
+              id="lname"
+              placeholder="Last Name"
+            />
+            <input
+              class="form-input"
+              type="text"
+              id="email"
+              placeholder="Email"
+            />
+            <input
+              class="form-input"
+              type="text"
+              id="number"
+              placeholder="1 123 456 789"
+            />
+          </form>
+        </div>
+        <div class="third-step-wrapper">
+          <div class="third-step">
+            <span class="third-step-text">3 Step</span>
+          </div>
+          <span class="shipping-details">Shipping Details</span>
+        </div>
+        <div class="shipping-form">
+          <form action="">
+            <input
+              class="form-input"
+              type="text"
+              id="country"
+              placeholder="Country"
+            />
+            <input
+              class="form-input"
+              type="text"
+              id="city"
+              placeholder="Town/City"
+            />
+            <input
+              class="form-input form-input-full-width"
+              type="text"
+              id="street"
+              placeholder="Street & House Number"
+            />
+            <input
+              class="form-input form-input-full-width"
+              type="text"
+              id="zip"
+              placeholder="ZIP/Postal Code"
+            />
+          </form>
+        </div>
+        <div class="fourth-step-wrapper">
+          <div class="fourth-step">
+            <span class="fourth-step-text">4 Step</span>
+          </div>
+          <span class="payment-details">Payment Details</span>
+        </div>
+        <div class="paypal-block">
+          <div class="paypal-header">
+            <span>Pay Securely Through with</span>
+            <img src="images/paypal-logo.png" width="122px" height="31px" />
+          </div>
+          <form
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+            target="_top"
+          >
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input
+              type="hidden"
+              name="hosted_button_id"
+              value="D9QDGFHCBW7JY"
+            />
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+              name="submit"
+              alt="PayPal - The safer, easier way to pay online!"
+            />
+            <img
+              alt=""
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
+        </div>
+        <!-- <div class="paypal-block">
+                <div class="paypal-header">
+                    <span>Pay Securely Through with</span>
+                    <img src="images/paypal-logo.png" width="122px" height="31px">
+                </div>
+                <div>
+                    <button class="paypal-btn">
+                        <span>Secure my order with free shipping</span>
+                    </button>
+                </div>
+            </div> -->
+        <div class="security-block">
+          <div class="security-header">
+            <span
+              >Your purchases will appear as “GREENSKYPTE” on your credit card
+              statement.</span
+            >
+          </div>
+          <div class="security-logo-list">
+            <div class="security-logo-item">
+              <img src="images/mc-afee.png" width="104px" height="42px" />
+            </div>
+            <div class="security-logo-item">
+              <img src="images/norton.png" width="104px" height="42px" />
+            </div>
+            <div class="security-logo-item">
+              <img src="images/es-256.png" width="104px" height="42px" />
+            </div>
+          </div>
+        </div>
+        <div class="order-footer">
+          <span
+            >Shopping on this page is safe and secure, your personal details are
+            strictly protected.</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="dmca-block">
+        <img src="images/dmca.png" width="150px" height="30px" />
+      </div>
+      <div class="footer-links">
+        <a href="">Privacy</a>
+        <a href="">Terms & Disclaimer</a>
+        <a href="">Support</a>
+      </div>
+      <div class="reserved-block">
+        <span>© All Rights Reserved.</span>
+      </div>
+    </div>
+  </body>
+</html>
