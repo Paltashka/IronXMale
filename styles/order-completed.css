@@ -863,7 +863,21 @@ body {
     flex-direction: column-reverse;
   }
   .video-player {
-    width: 600px;
-    height: 450px;
+    width: 440px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .video-player {
+    width: 340px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .video-player {
+    width: 240px;
+    height: 150px;
   }
 }

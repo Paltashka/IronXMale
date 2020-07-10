@@ -258,11 +258,7 @@ html, body {
     color: #000000;
 }
 
-@media screen and (max-width: 320px) {
-    .header {
-        width: 320px;
-        justify-content: unset;
-    }
+@media screen and (max-width: 768px) {
     .header img {
         margin-left: 32px;
     }
@@ -274,9 +270,6 @@ html, body {
         line-height: 21px;
         color: #FFFFFF;
         margin-right: 36px;
-    }
-    .content {
-        align-items: unset;
     }
     .title span {
         display: none;
@@ -309,7 +302,7 @@ html, body {
         border-radius: 0px;
     }
     .give-discount-block {
-        width: 320px;
+        width: 100%;
         text-align: center;
     }
     .give-discount-block span {
@@ -338,13 +331,24 @@ html, body {
         margin: 0;
     }
     .footer {
-        width: 320px;
-        flex-direction: column-reverse;
+        /* width: 320px; */
         height: 200px;
     }
     .footer-links {
         width: auto;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+}   
+
+@media screen and (min-width: 768px) {
+    .give-discount-block{
+        width: 73%;
     }
 }

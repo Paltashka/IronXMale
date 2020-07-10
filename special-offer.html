@@ -2,13 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/special-offer.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
+  <script>
+    let isChecked = false;
+    const cssClass = ' supply-radiobtn-checked';
+    function checkDiv(e) {
+      e = e || window.event;
+      let element = e.target;
+      if (!isChecked) {
+        element.className += cssClass;
+        isChecked = true;
+      } else {
+        element.className = element.className.replace(cssClass, '');
+        console.log(element.className); 
+        isChecked = false;
+      }
+    }
+  </script>
   <body>
     <div class="expires-in">
       <span>Offer expires in</span>
@@ -34,7 +50,7 @@
     </div>
     <div class="order-block">
       <div class="choose-order">
-        <img src="images/product-group.png" />
+        <img src="images/product-group.png" class="order-product-group"/>
         <button class="free-shipping-btn">
           <span class="free-shipping-btn-bold-text"
             >Free Shipping
@@ -51,8 +67,9 @@
           </div>
           <div class="supply-list">
             <div class="supply-item">
-              <input class="supply-radiobtn" type="radio" id="supply" />
-              <!-- <div class="supply-radiobtn"></div> -->
+              <div class="supply-radiobtn" onclick="checkDiv()">
+                <img src="images/checked.png">
+              </div>
               <div class="supply-price-wrapper">
                 <div class="supply-price">
                   <span class="supply-period">1 Month Supply</span>
@@ -67,7 +84,26 @@
               </div>
             </div>
             <div class="supply-best-seller-item">
-              <input class="supply-radiobtn" type="radio" id="supply" />
+              <div class="supply-radiobtn" onclick="checkDiv()">
+                <img src="images/checked.png">
+              </div>
+              <div class="supply-price-wrapper">
+                <div class="supply-price">
+                  <span class="supply-period">1 Month Supply</span>
+                  <span class="supply-price-text">$49.95</span>
+                </div>
+                <div class="supply-discount-price">
+                  <span class="supply-discount-percentage"
+                    >51% Discount ($49.95/EACH)</span
+                  >
+                  <span class="supply-discount-price-text">$99.95</span>
+                </div>
+              </div>
+            </div>
+            <div class="supply-item">
+              <div class="supply-radiobtn" onclick="checkDiv()">
+                <img src="images/checked.png">
+              </div>
               <div class="supply-price-wrapper">
                 <div class="supply-price">
                   <span class="supply-period">1 Month Supply</span>
