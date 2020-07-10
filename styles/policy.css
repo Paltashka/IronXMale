@@ -1,4 +1,7 @@
 body {
+    margin: auto;
+    padding: auto;
+    min-width: fit-content;
     background: linear-gradient(66.15deg, #F2F5FF -3.56%, #FBFCFF 88.7%);
 }
 
@@ -144,4 +147,32 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #000000;
+}
+
+@media (max-width: 320px) {
+    .header span {
+        font-size: 36px;
+    }
+    .sections {
+        margin: 0;
+        width: 320px;
+    }
+    .section-header {
+        text-align: center;
+    }
+    .section-header span {
+        font-size: 18px;
+    }
+    .section-content {
+        text-align: center;
+    }
+    .section-item {
+        align-items: center;
+    }
+    .footer-list {
+        margin-top: 0;
+        flex-direction: column;
+        height: 190px;
+        justify-content: space-between;
+    }
 }

@@ -1,4 +1,7 @@
 body {
+    margin: auto;
+    padding: auto;
+    min-width: fit-content;
     background: linear-gradient(66.15deg, #F2F5FF -3.56%, #FBFCFF 88.7%);
 }
 
@@ -589,8 +592,4 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #000000;
-}
-
-@media (max-width: 1440px) {
-    
 }

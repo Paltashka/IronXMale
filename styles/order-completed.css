@@ -675,7 +675,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .header {
     background: #eef4fc;
     justify-content: center;
@@ -803,8 +803,8 @@ body {
     margin: 0;
   }
   .footer {
-    width: 320px;
-    flex-direction: column-reverse;
+    width: 100%;
+    flex-direction: unset;
     height: 200px;
     text-align: center;
   }
@@ -855,5 +855,15 @@ body {
   }
   .timer-new-line {
     display: block;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .video-player {
+    width: 600px;
+    height: 450px;
   }
 }
