@@ -12,6 +12,11 @@
   <script>
     let isChecked = false;
     const cssClass = ' supply-radiobtn-checked';
+
+    let time = 60 * 15,
+        display = document.querySelector('#timer');
+    document.addEventListener("DOMContentLoaded", () => startTimer(time, display), false);
+
     function checkDiv(e) {
       e = e || window.event;
       let element = e.target;
@@ -24,18 +29,43 @@
         isChecked = false;
       }
     }
+
+    function renderTime(time) {
+      const blocks = document.getElementsByClassName("expire-time-item");
+      const minutes = time.slice(0, 2);
+      const seconds = time.slice(2, 4);
+      blocks[0].textContent = minutes;
+      blocks[1].textContent = seconds;
+    }
+
+    function startTimer(duration, display) {
+      let timer = duration,
+        minutes,
+        seconds;
+      setInterval(() => {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        renderTime('' + minutes + seconds);
+
+        if (--timer < 0) {
+          timer = duration;
+        }
+      }, 1000);
+    }
   </script>
   <body>
     <div class="expires-in">
       <span>Offer expires in</span>
       <div class="expire-time">
-        <div class="expire-time-item">
-          <span>04</span>
-        </div>
-        <div class="expire-time-item">
-          <span>12</span>
-        </div>
-      </div>
+        <span id="timer">
+          <span class="expire-time-item"></span>
+          <span class="expire-time-item"></span>
+        </span>
+      </div> 
     </div>
     <div class="offer-with-price">
       <div class="special-offer">

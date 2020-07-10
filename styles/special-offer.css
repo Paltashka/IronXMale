@@ -31,6 +31,10 @@ body {
   align-items: center;
 }
 
+#timer {
+  display: flex;
+}
+
 .expire-time-item {
   display: flex;
   justify-content: center;
@@ -40,9 +44,6 @@ body {
   background: #ffffff;
   border-radius: 6px;
   margin-right: 5px;
-}
-
-.expire-time-item span {
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: bold;
