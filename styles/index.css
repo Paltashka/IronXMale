@@ -470,7 +470,6 @@ body {
     width: 124px;
     height: 1px;
     background: #E83136;   
-    margin-right: 10px;
 }
 
 .footer-list {
@@ -590,4 +589,8 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #000000;
+}
+
+@media (max-width: 1440px) {
+    
 }
