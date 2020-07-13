@@ -5,6 +5,12 @@ body {
     background: linear-gradient(66.15deg, #F2F5FF -3.56%, #FBFCFF 88.7%);
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .header-container {
     display: flex;
     flex-direction: column;
@@ -31,8 +37,8 @@ body {
 .product-container {
     display: flex;
     justify-content: center;
-    margin-left: 135px;
-    margin-right: 135px;
+    /* margin-left: 135px; */
+    /* margin-right: 135px; */
 }
 
 .product-header {
@@ -213,7 +219,7 @@ body {
     width: auto;
     height: 64px;
     margin-top: 37px;
-    margin-left: 233px;
+    /* margin-left: 233px; */
 }
 
 .we-accept-block {
@@ -248,7 +254,7 @@ body {
     border: 2px solid rgba(247, 152, 29, 0.3);
     box-sizing: border-box;
     border-radius: 10px;
-    margin-right: 233px;
+    /* margin-right: 233px; */
 }
 
 .shipping-block span {
@@ -592,4 +598,118 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 768px;
+    }
+    .header-text {
+        text-align: center;
+        font-size: 32px;
+    }
+    .video-block {
+        width: 280px;
+        height: 250px;
+    }
+    .product-container {
+        margin-right: 0;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-item {
+        width: 280px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .product-header {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .add-to-cart-button {
+        width: 260px;
+    }
+    .payment-container {
+        height: auto;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .product-best-value-wrapper {
+        height: auto;
+    }
+    .we-accept-block {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .shipping-block {
+        width: 100%;
+        margin-right: 0;
+    }
+    .shipping-block span {
+        font-size: 16px;
+    }
+    .testimonial-list {
+        flex-wrap: nowrap;
+        height: auto;
+        align-items: center;
+    }
+    .testimonial-item {
+        width: auto;
+        margin-right: 0;
+    }
+    .questions-block {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .questions-header span {
+        font-size: 28px;
+    }
+    .questions-title span {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .question-text {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    .questions-number span {
+        margin-left: 20px;
+    }
+    .product-image-wrapper {
+        width: auto;
+    }
+    .footer-list {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .footer-links {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .statements-block {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .product-best-value-item {
+        width: 100%;
+    }
+    .questions-dash {
+        width: 250px;
+    }
+    .product-best-value-wrapper {
+        height: 550px;
+    }
+    .testimonial-header span {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main {
+        width: 320px;
+    }
 }
