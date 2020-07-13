@@ -254,29 +254,29 @@ body {
 }
 
 .supply-radiobtn {
-    width: 24px;
-    height: 24px;
-    border: 2px solid rgba(44, 64, 146, 0.16);
-    box-sizing: border-box;
-    border-radius: 6px;
-    margin-right: 25px;
-    margin-left: 30px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(44, 64, 146, 0.16);
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-right: 25px;
+  margin-left: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .supply-radiobtn img {
-    user-select: none;
-    pointer-events: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 .supply-radiobtn-checked {
-    background: #2C4092;
-    border: 2px solid #2C4092;
-    box-sizing: border-box;
-    border-radius: 6px;
+  background: #2c4092;
+  border: 2px solid #2c4092;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
 
 .supply-period {
@@ -447,6 +447,14 @@ body {
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
+}
+
+.form-input {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
   opacity: 0.5;
 }
 
@@ -521,6 +529,36 @@ body {
   margin-top: 26px;
 }
 
+.commissions {
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/commissions.png);
+  width: 170px;
+  position: absolute;
+  left: 410px;
+  height: 33px;
+}
+
+.commissions-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.commissions-mobile {
+  display: none;
+}
+
 .fourth-step {
   display: flex;
   justify-content: center;
@@ -577,7 +615,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(83.44deg, #ffd02b 21.89%, #f5d110 61.25%);
+  background: #FDF6CF;
+  
   border-radius: 3px;
   margin-top: 29px;
 }
@@ -708,7 +747,6 @@ body {
   line-height: 24px;
 }
 
-
 @media screen and (max-width: 768px) {
   .main {
     width: 100%;
@@ -746,11 +784,17 @@ body {
   .order-product-group {
     margin-top: 36px;
   }
-  .first-step-wrapper, .second-step-wrapper, .third-step-wrapper, .fourth-step-wrapper {
+  .first-step-wrapper,
+  .second-step-wrapper,
+  .third-step-wrapper,
+  .fourth-step-wrapper {
     flex-direction: column;
     margin-left: 16px;
   }
-  .first-step, .second-step, .third-step, .fourth-step {
+  .first-step,
+  .second-step,
+  .third-step,
+  .fourth-step {
     margin: 0;
   }
   .first-step:after,
@@ -860,16 +904,38 @@ body {
     height: 24px;
   }
   .footer {
-    margin-top: 320px;
+    margin-top: 370px;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     height: 215px;
   }
-  .dmca-block, .reserved-block {
+  .dmca-block,
+  .reserved-block {
     margin: 0;
   }
   .footer-links {
     flex-direction: column;
+  }
+  .commissions {
+    display: none;
+  }
+  .commissions-mobile {
+    display: flex;
+    justify-content: center;
+    background: #E4434E;
+    width: 100%;
+    position: unset;
+    margin-top: 19px;
+    height: 36px;
+    border-radius: 0;
+  }
+  .paypal-block {
+    margin-top: 0;
+  }
+  .free-shipping-btn {
+    width: 100%;
+    border-radius: 0%;
+    margin: 0;
   }
 }
 
