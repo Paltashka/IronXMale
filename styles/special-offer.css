@@ -6,6 +6,11 @@ body {
   min-width: fit-content;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .expires-in {
   display: flex;
   justify-content: center;
@@ -703,7 +708,11 @@ body {
   line-height: 24px;
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
   .special-offer span {
     font-size: 21px;
   }
@@ -715,14 +724,14 @@ body {
     width: auto;
   }
   .expires-in {
-    width: 320px;
+    width: 100%;
   }
   .price-with-discount {
     text-align: center;
   }
   .offer-with-price {
     background-color: white;
-    width: 320px;
+    width: 100%;
   }
   .order-block {
     margin-top: 0;
@@ -732,36 +741,75 @@ body {
     width: auto;
   }
   .choose-order {
-    width: 320px;
+    width: 100%;
   }
   .order-product-group {
     margin-top: 36px;
   }
-  .first-step-wrapper {
+  .first-step-wrapper, .second-step-wrapper, .third-step-wrapper, .fourth-step-wrapper {
     flex-direction: column;
     margin-left: 16px;
   }
-  .first-step {
+  .first-step, .second-step, .third-step, .fourth-step {
     margin: 0;
   }
   .first-step:after,
   .first-step:before {
     left: 91px;
   }
+
+  .second-step:after,
+  .second-step:before {
+    left: 91px;
+  }
+
+  .third-step:after,
+  .third-step:before {
+    left: 91px;
+  }
+
+  .fourth-step:after,
+  .fourth-step:before {
+    left: 91px;
+  }
+
   .supply-price {
     flex-direction: column;
   }
+
+  .paypal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .supply-discount-price {
     flex-direction: column;
   }
+  .supply-period {
+    margin: 0;
+  }
+  .supply-period span {
+    font-size: 16px;
+  }
+  .supply-discount-price span {
+    font-size: 16px;
+  }
+  .supply-best-seller-item {
+    width: 100%;
+  }
+  .supply-discount-percentage {
+    margin: 0;
+  }
   .supply-item {
+    width: 100%;
     height: 109px;
     margin-bottom: 20px;
   }
   .best-seller-block {
     left: 0;
     top: 239px;
-    width: 320px;
+    width: 100%;
     border-radius: 0%;
   }
   .supply-best-seller-item {
@@ -775,8 +823,58 @@ body {
   }
   .choose-order {
     background-color: white;
+    margin-right: 0;
   }
   .contact-information {
     box-shadow: none;
+    width: 100%;
+  }
+  .form-input {
+    width: 95%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .order-footer {
+    margin-top: 16px;
+    text-align: center;
+  }
+  .security-header {
+    text-align: center;
+  }
+  .security-logo-list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .security-logo-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .security-logo-item img {
+    width: 60px;
+    height: 24px;
+  }
+  .footer {
+    margin-top: 320px;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    height: 215px;
+  }
+  .dmca-block, .reserved-block {
+    margin: 0;
+  }
+  .footer-links {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    width: 320px;
   }
 }
