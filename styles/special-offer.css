@@ -361,6 +361,7 @@ body {
   height: 1025px;
   background-color: white;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 
 .second-step-wrapper {
@@ -423,6 +424,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 38px;
+}
+
+#country-flag {
+  position: absolute;
+  left: 488px;
+  top: 182px;
 }
 
 .form-input {
@@ -615,8 +622,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #FDF6CF;
-  
+  background: #fdf6cf;
+
   border-radius: 3px;
   margin-top: 29px;
 }
@@ -747,7 +754,11 @@ body {
   line-height: 24px;
 }
 
-@media screen and (max-width: 768px) {
+.iti__country-list {
+  width: 240px;
+}
+
+@media screen and (max-width: 1200px) {
   .main {
     width: 100%;
   }
@@ -922,7 +933,7 @@ body {
   .commissions-mobile {
     display: flex;
     justify-content: center;
-    background: #E4434E;
+    background: #e4434e;
     width: 100%;
     position: unset;
     margin-top: 19px;
@@ -937,10 +948,27 @@ body {
     border-radius: 0%;
     margin: 0;
   }
+  .iti {
+    width: 95%;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #phone {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .main {
     width: 320px;
   }
+}
+
+.iti {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.iti__flag {
+  background-image: url("/images/flags.png") !important;
 }
