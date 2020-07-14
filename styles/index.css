@@ -153,6 +153,7 @@ body {
     border-radius: 10px;
     margin-top: 28px;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 .add-to-cart-button span {
@@ -598,6 +599,10 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #000000;
+}
+
+.add-to-cart-paypal {
+    visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {

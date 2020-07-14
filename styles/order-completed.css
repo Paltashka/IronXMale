@@ -676,6 +676,18 @@ body {
   top: -15px;
 }
 
+.rectangle-left {
+  position: absolute;
+  left: -7px;
+  top: 6px;
+}
+
+.rectangle-right {
+  position: absolute;
+  left: 150px;
+  top: 6px;
+}
+
 .discount span {
   font-family: Work Sans;
   font-style: normal;
