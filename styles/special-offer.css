@@ -656,6 +656,16 @@ body {
   cursor: pointer;
 }
 
+.disabled {
+  pointer-events: none;
+}
+
+.paypal-btn i {
+  visibility: hidden;
+  color: white;
+  font-size: 28px !important;
+}
+
 .paypal-btn span {
   font-family: Source Sans Pro;
   font-style: normal;
