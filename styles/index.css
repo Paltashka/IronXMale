@@ -37,8 +37,6 @@ body {
 .product-container {
     display: flex;
     justify-content: center;
-    /* margin-left: 135px; */
-    /* margin-right: 135px; */
 }
 
 .product-header {
@@ -220,7 +218,6 @@ body {
     width: auto;
     height: 64px;
     margin-top: 37px;
-    /* margin-left: 233px; */
 }
 
 .we-accept-block {
@@ -255,7 +252,6 @@ body {
     border: 2px solid rgba(247, 152, 29, 0.3);
     box-sizing: border-box;
     border-radius: 10px;
-    /* margin-right: 233px; */
 }
 
 .shipping-block span {
@@ -650,7 +646,7 @@ body {
         margin-right: 0;
     }
     .shipping-block {
-        width: 100%;
+        width: auto;
         margin-right: 0;
     }
     .shipping-block span {

@@ -990,6 +990,9 @@ body {
   .paypal-block {
     margin-top: 0;
   }
+  .paypal-btn {
+    width: 100%;
+  }
   .free-shipping-btn {
     width: 100%;
     border-radius: 0%;
