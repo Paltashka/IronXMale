@@ -172,9 +172,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #E83136;
-    height: 66px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
     margin-top: 34px;
 }
 
@@ -182,7 +180,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;    
-    height: 50px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 15px;
@@ -609,7 +606,7 @@ body {
     }
     .header-text {
         text-align: center;
-        font-size: 32px;
+        font-size: 26px;
     }
     .video-block {
         width: 280px;
@@ -710,6 +707,20 @@ body {
         font-size: 28px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .main {
+        width: 425px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .main {
+        width: 375px;
+    }
+}
+
 
 @media screen and (max-width: 320px) {
     .main {
