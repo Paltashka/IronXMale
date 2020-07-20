@@ -13,9 +13,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script type="text/javascript" src="./dummy.js"></script>
+    <script type="text/javascript" src="js/dummy.js"></script>
     <script id="insert"></script>
-    <script src="./stringify.js" charset="utf-8"></script>
+    <script src="js/stringify.js" charset="utf-8"></script>
     <script>
       const customConsole = (w) => {
         const pushToConsole = (payload, type) => {
@@ -404,10 +404,10 @@
                 />
               </form>
               <!-- <div> -->
-                <button class="paypal-btn disabled" onclick="pay()">
-                  <span>Secure my order with free shipping</span>
-                  <i class="fa fa-circle-o-notch fa-spin"></i>
-                </button>
+              <button class="paypal-btn disabled" onclick="pay()">
+                <span>Secure my order with free shipping</span>
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+              </button>
               <!-- </div> -->
             </div>
             <div class="security-block">
@@ -453,9 +453,9 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 
-    <script type="text/javascript" src="./email.min.js"></script>
+    <script type="text/javascript" src="js/email.min.js"></script>
     <script type="text/javascript">
       (function () {
         emailjs.init("user_vXeGS2FIyKZtI44J2nkbf");
@@ -463,8 +463,28 @@
     </script>
 
     <script>
-      function pay() {
-        $("#paypal_click").click();
+      // const apiKey = "pk_2d01fe2def57904743c047211c16c4ff21";
+      function pay() {        
+        // let list_id;
+        // fetch(
+        //   "https://cors-anywhere.herokuapp.com/https://a.klaviyo.com/api/v2/lists",
+        //   {
+        //     method: "POST",
+        //     headers: {
+        //       "Access-Control-Allow-Origin": "*",
+        //       'Accept': 'application/json',
+        //       'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify({
+        //       api_key: apiKey,
+        //       list_name: "Single Member List",
+        //     }),
+        //   }
+        // )
+        //   .then((resp) => resp.json())
+        //   .then((data) => list_id = data);
+
+          $("#paypal_click").click();
       }
     </script>
 
@@ -481,35 +501,33 @@
           display: "none",
         });
 
-        const service_id = "default_service";
-        const template_id = "template_zfaOZURM";
+        // const service_id = "default_service";
+        // const template_id = "template_zfaOZURM";
 
-        emailjs.sendForm(service_id, template_id, myform[0]).then(
-          function () {
-            
-          },
-          function (err) {
-            alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-          }
-        );
+        // emailjs.sendForm(service_id, template_id, myform[0]).then(
+        //   function () {},
+        //   function (err) {
+        //     alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+        //   }
+        // );
         return false;
       });
 
       myform.submit(function (event) {
         event.preventDefault();
 
-        const service_id = "default_service";
-        const template_client_id = "client_email";
+        // const service_id = "default_service";
+        // const template_client_id = "client_email";
 
-        emailjs.sendForm(service_id, template_client_id, myform[0]).then(
-          function () {
-            myform.find("button");
-          },
-          function (err) {
-            alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-            myform.find("button");
-          }
-        );
+        // emailjs.sendForm(service_id, template_client_id, myform[0]).then(
+        //   function () {
+        //     myform.find("button");
+        //   },
+        //   function (err) {
+        //     alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+        //     myform.find("button");
+        //   }
+        // );
         return false;
       });
     </script>
