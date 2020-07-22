@@ -25,7 +25,7 @@ html, body {
     color: #FFFFFF;
 }
 
-.header-bold-text {
+.header-text-bold {
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -288,7 +288,7 @@ html, body {
     .discount-product {
         display: flex;
         flex-direction: column;
-        width: 320px;
+
     }
     .prices {
         display: flex;

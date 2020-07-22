@@ -104,6 +104,7 @@ body {
     text-transform: uppercase;
     color: #e4434e;
     text-decoration-line: line-through;
+    font-weight: 300;
 }
 
 .discount-percentage {
@@ -112,6 +113,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 .order-block {
@@ -544,7 +546,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/images/commissions.png);
+    background-image: url("/public/images/commissions.png");
     width: 170px;
     position: absolute;
     left: 410px;
@@ -638,12 +640,21 @@ body {
     margin-top: 29px;
 }
 
+.paypal-header {
+    display: flex;
+    align-items: center;
+}
+
 .paypal-header span {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 28px;
+}
+
+.paypal-logo {
+    margin-left: 21px;
 }
 
 .paypal-btn {
@@ -722,6 +733,7 @@ body {
     margin-top: 24px;
     background: rgba(45, 65, 147, 0.03);
     border-radius: 0px 0px 6px 6px;
+    text-align: center;
 }
 
 .order-footer span {
@@ -1058,6 +1070,9 @@ body {
     .main {
         width: 320px;
     }
+    .new-line {
+        display: none;
+    }
 }
 
 .iti {
@@ -1066,5 +1081,5 @@ body {
 }
 
 .iti__flag {
-    background-image: url("/images/flags.png") !important;
+    background-image: url("/public/images/flags.png") !important;
 }
