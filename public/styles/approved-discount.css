@@ -13,15 +13,21 @@ html, body {
     background: linear-gradient(90deg, #980B0B 0%, #DB3434 105.77%);
 }
 
-.header span {
-    text-transform: uppercase;
+.header img {
+    margin-right: 33px;
+}
+
+.header-text {
     font-family: Work Sans;
     font-style: normal;
-    font-weight: 500;
     font-size: 28px;
     line-height: 21px;
     color: #FFFFFF;
-    margin-left: 33px;
+}
+
+.header-bold-text {
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .content {
@@ -107,10 +113,7 @@ html, body {
 }
 
 .packages-left {
-    width: 166px;
-    height: 26px;
-    padding: 5px;
-    background: linear-gradient(90deg, #980B0B 0%, #DB3434 105.77%);
+    background-color: #CD3535   ;
     font-family: Work Sans;
     font-style: normal;
     font-weight: 600;
@@ -118,8 +121,15 @@ html, body {
     line-height: 36px;
     color: white;
     text-transform: uppercase;
-    padding: 8px;
     border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.discount-percentage {
+    background-color: #FCEDC2;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .give-discount-block {

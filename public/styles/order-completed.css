@@ -2,7 +2,7 @@ body {
   margin: auto;
   padding: auto;
   min-width: fit-content;
-  background: linear-gradient(66.15deg, #f2f5ff -3.56%, #fbfcff 88.7%);
+  /* background: linear-gradient(66.15deg, #f2f5ff -3.56%, #fbfcff 88.7%); */
 }
 
 .main {
@@ -138,10 +138,19 @@ body {
   margin-left: 15px;
 }
 
+.video-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url("./../images/order-completed-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .video-block-text {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-top: 28px;
 }
@@ -152,6 +161,7 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 21px;
+  text-align: center;
 }
 
 .video-block-title br {
@@ -172,6 +182,8 @@ body {
 }
 
 .time-block {
+  width: 20px;
+  height: 22px;
   background: #cd3535;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.06);
   border-radius: 3px;
@@ -183,7 +195,10 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  padding: 3px;
+  padding-left: 7px;
+  padding-top: 3px;
+  padding-right: 7px;
+  padding-bottom: 3px;
 }
 
 .discount-percentage {
@@ -262,7 +277,7 @@ body {
 }
 
 .sets img {
-  width: 28px;
+  margin-right: 5px;
 }
 
 .shipping {
@@ -544,6 +559,21 @@ body {
   cursor: pointer;
 }
 
+.book-object-1 {
+  position: absolute;
+  left: 0;
+}
+
+.book-object-2 {
+  position: absolute;
+  top: 35px;
+}
+
+.book-object-3 {
+  position: absolute;
+  top: 150px;
+}
+
 .free-gift-text-block {
   display: flex;
   flex-direction: column;
@@ -566,13 +596,18 @@ body {
   justify-content: center;
 }
 
+.list-item {
+  display: flex;
+}
+
 .list-item span {
   font-family: Work Sans;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: #ffffff;
+  margin-left: 22px;
 }
 
 .footer {
@@ -706,6 +741,12 @@ body {
   display: none;
 }
 
+.supplies img {
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 150px;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     background: #eef4fc;
@@ -723,6 +764,7 @@ body {
   }
   .video-block-text {
     text-align: center;
+    align-items: center;
   }
   .video-player {
     width: 540px;
@@ -798,7 +840,7 @@ body {
   .list-item span {
     font-family: Work Sans;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
@@ -887,6 +929,12 @@ body {
   .timer-new-line {
     display: block;
   }
+  .book-object-2 {
+    display: none;
+  }
+  .book-object-3 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -912,80 +960,3 @@ body {
     height: 150px;
   }
 }
-
-
-/* @media screen and (min-width: 769px) and (max-width: 981px) {
-  .initial-order:after {
-    left: 287px;
-  }
-  .initial-order:before {
-    left: 289px;
-  }
-  .optional-upgrades:after {
-    left: 646px;
-  }
-  .optional-upgrades:before {
-    left: 650px;
-  }
-}
-
-@media screen and (min-width: 982px) and (max-width: 988px) {
-  .initial-order:after {
-    left: 289px;
-  }
-  .initial-order:before {
-    left: 291px;
-  }
-  .optional-upgrades:after {
-    left: 648px;
-  }
-  .optional-upgrades:before {
-    left: 652px;
-  }
-}
-
-
-@media screen and (min-width: 989px) and (max-width: 994px) {
-  .initial-order:after {
-    left: 291px;
-  }
-  .initial-order:before {
-    left: 293px;
-  }
-  .optional-upgrades:after {
-    left: 652px;
-  }
-  .optional-upgrades:before {
-    left: 654px;
-  }
-}
-
-@media screen and (min-width: 995px) and (max-width: 998px) {
-  .initial-order:after {
-    left: 293px;
-  }
-  .initial-order:before {
-    left: 295px;
-  }
-  .optional-upgrades:after {
-    left: 655px;
-  }
-  .optional-upgrades:before {
-    left: 657px;
-  }
-}
-
-@media screen and (min-width: 999px) and (max-width: 1024px) {
-  .initial-order:after {
-    left: 295px;
-  }
-  .initial-order:before {
-    left: 297px;
-  }
-  .optional-upgrades:after {
-    left: 658px;
-  }
-  .optional-upgrades:before {
-    left: 662px;
-  }
-} */

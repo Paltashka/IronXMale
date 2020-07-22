@@ -1,5 +1,7 @@
 body {
-    background: linear-gradient(66.15deg, #F2F5FF -3.56%, #FBFCFF 88.7%);
+    margin: auto;
+    padding: auto;
+    min-width: fit-content;
 }
 
 .main {
@@ -79,6 +81,36 @@ body {
     margin-top: 58px;
     margin-bottom: 40px;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9FAFF;
+    margin-top: 109px;
+    position: relative;
+    width: 100%;
+}
+
+.footer-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 928px 50px 0;
+    border-color: transparent #F2F6FF transparent transparent;
+    position: absolute;
+    top: -19px;
+    left: 977px;
+}
+
+/* .footer:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 0;
+    border-top: 81px solid white;
+    border-left: 1510px solid #F9FAFF;
+} */
 
 .footer-list {
     display: flex;
@@ -179,6 +211,16 @@ body {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .footer:before {
+        border-top-width: 80px;
+    }
+
+    .footer-triangle {
+        left: 384px;
+        border-width: 38px 384px 22px 0;
+        top: 21px;
+    }
 }
 
 @media screen and (max-width: 532px) {
@@ -190,5 +232,64 @@ body {
 @media screen and (max-width: 394px) {
     .protection-notice span {
         font-size: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .footer:before {
+        border-top-width: 74px;
+    }
+
+    .footer-triangle {
+        left: 764px;
+        border-width: 50px 676px 33px 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer:before {
+        border-top-width: 82px;
+    }
+
+    .footer-triangle {
+        left: 538px;
+        border-width: 50px 486px 22px 0;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer:before {
+        border-top-width: 86px;
+    }
+
+    .footer-triangle {
+        left: 161px;
+        border-width: 28px 159px 12px 0;
+        top: 51px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .footer:before {
+        border-top-width: 86px;
+    }
+
+    .footer-triangle {
+        left: 186px;
+        border-width: 28px 189px 12px 0;
+        top: 48px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .footer:before {
+        border-top-width: 86px;
+    }
+
+    .footer-triangle {
+        left: 205px;
+        border-width: 28px 220px 12px 0;
+        top: 48px;
     }
 }
