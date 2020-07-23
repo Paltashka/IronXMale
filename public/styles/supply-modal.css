@@ -100,6 +100,28 @@ html, body {
     display: none;
 }
 
+.add-to-cart-paypal {
+    display: none;
+}
+
+.load-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.load-more-arrows {
+    position: absolute;
+    top: 34px;
+}
+
+.ellipse {
+    position: absolute;
+    top: 19px;
+}
+
 @media screen and (max-width: 320px) {
     .close-btn-icon {
         display: none;
@@ -129,5 +151,9 @@ html, body {
     }
     .choose-seller-btn {
         width: 288px;
+    }
+
+    .product-img {
+        flex-direction: column;
     }
 }

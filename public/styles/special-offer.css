@@ -133,6 +133,11 @@ body {
     margin-right: 30px;
 }
 
+.order-product-group {
+    width: 240px;
+    margin-top: 36px;
+}
+
 .free-shipping-btn {
     display: flex;
     justify-content: center;
