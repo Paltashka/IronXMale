@@ -423,6 +423,15 @@ body {
     line-height: 28px;
 }
 
+.third-form {
+    width: 0;
+    height: 0;
+}
+
+.third-form input {
+    visibility: hidden;
+}
+
 .form-block {
     /* display: flex; */
     flex-wrap: wrap;

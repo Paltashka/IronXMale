@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/index.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles/index.css"/>
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700"
-      rel="stylesheet"
-      type="text/css"
+            href="https://fonts.googleapis.com/css?family=Lato:400,700"
+            rel="stylesheet"
+            type="text/css"
     />
-  </head>
-  <script>
-      function pay() {
-        $("#paypal_click").click();
-      }
-  </script>
-  <body>
-    <div class="main">
-      <div class="header-container">
+</head>
+<script>
+    function pay(btnName) {
+        $(`#${btnName}`).click();
+    }
+</script>
+<body>
+<div class="main">
+    <div class="header-container">
         <div class="header-text">Some Heading Goes Here</div>
         <div class="video-block"></div>
         <img src="images/index-left-arrows.png" class="left-arrows">
@@ -36,163 +36,145 @@
         <img src="images/header-arrow-1.png" class="right-header-arrow-4">
         <img src="images/header-arrow-1.png" class="right-header-arrow-5">
         <img src="images/header-lines.png" class="right-header-lines">
-      </div>
-      <div class="product-container">
+    </div>
+    <div class="product-container">
         <div class="product-item">
-          <form
-            target="paypal"
-            action="https://www.paypal.com/cgi-bin/webscr"
-            method="post"
-            class="add-to-cart-paypal"
-          >
-            <input type="hidden" name="cmd" value="_cart" />
-            <input
-              type="hidden"
-              name="business"
-              value="andr123.andr123.andr123@gmail.com"
-            />
-            <input type="hidden" name="lc" value="US" />
-            <input type="hidden" name="item_name" value="Iron Max" />
-            <input type="hidden" name="amount" value="2.00" />
-            <input type="hidden" name="currency_code" value="USD" />
-            <input type="hidden" name="button_subtype" value="products" />
-            <input type="hidden" name="no_note" value="0" />
-            <input type="hidden" name="shipping" value="2.00" />
-            <input type="hidden" name="add" value="1" />
-            <input
-              type="hidden"
-              name="bn"
-              value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest"
-            />
-            <input
-              type="image"
-              src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
-              border="0"
-              name="submit"
-              alt="PayPal - The safer, easier way to pay online!"
-              id="paypal_click"
-            />
-            <img
-              alt=""
-              border="0"
-              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-              width="1"
-              height="1"
-            />
-          </form>
-          <div class="product-header">
-            <span>1 Month Supply</span>
-          </div>
-          <div class="product-image-wrapper">
-            <img src="images/product.png" />
-          </div>
-          <div class="product-discount">
-            <span>Save 51%</span>
-          </div>
-          <div class="product-prices">
-            <div class="product-discounted-price">
-              <span>$49.55</span>
-            </div>
-            <div class="product-original-price">
-              <span>$99.95</span>
-            </div>
-          </div>
-          <div class="add-to-cart-wrapper">
-            <div class="cart-logo">
-              <img src="images/cart-logo.png" />
-            </div>
-            <div class="add-to-cart-button" onclick="pay()">
-              <img src="images/cart.png" />
-              <span>Add to cart</span>
-            </div>
-          </div>
-        </div>
-        <div class="product-best-value-wrapper">
-          <div class="product-best-value-header">
-            <img src="images/best-value-logo.png" />
-            <span>Best Value</span>
-          </div>
-          <div class="product-best-value-item">
+            <form  target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="add-to-cart-paypal">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="F27TV8BJ44BPC">
+                <input id="paypal_click_1" type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="add-to-cart-paypal">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="LAH7U2TH4U62S">
+                <input id="paypal_click_2" type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="add-to-cart-paypal">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="4HE6TN57FBCPU">
+                <input id="paypal_click_3" type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+
+
             <div class="product-header">
-              <span>6 Month Supply</span>
+                <span>1 Month Supply</span>
             </div>
             <div class="product-image-wrapper">
-              <img src="images/product.png" />
+                <img src="images/product.png"/>
             </div>
             <div class="product-discount">
-              <span>Save 67%</span>
+                <span>Save 51%</span>
             </div>
             <div class="product-prices">
-              <div class="product-discounted-price">
-                <span>$199.95</span>
-              </div>
-              <div class="product-original-price">
-                <span>$599.95</span>
-              </div>
+                <div class="product-discounted-price">
+                    <span>$49.55</span>
+                </div>
+                <div class="product-original-price">
+                    <span>$99.95</span>
+                </div>
             </div>
             <div class="add-to-cart-wrapper">
-              <div class="cart-logo">
-                <img src="images/cart-logo.png" />
-              </div>
-              <div class="add-to-cart-button">
-                <img src="images/cart.png" />
-                <span>Add to cart</span>
-              </div>
+                <div class="cart-logo">
+                    <img src="images/cart-logo.png"/>
+                </div>
+                <div class="add-to-cart-button" onclick="pay('paypal_click_1')">
+                    <img src="images/cart.png"/>
+                    <span>Add to cart</span>
+                </div>
             </div>
-          </div>
+        </div>
+        <div class="product-best-value-wrapper">
+            <div class="product-best-value-header">
+                <img src="images/best-value-logo.png"/>
+                <span>Best Value</span>
+            </div>
+            <div class="product-best-value-item">
+                <div class="product-header">
+                    <span>6 Month Supply</span>
+                </div>
+                <div class="product-image-wrapper">
+                    <img src="images/product.png"/>
+                </div>
+                <div class="product-discount">
+                    <span>Save 67%</span>
+                </div>
+                <div class="product-prices">
+                    <div class="product-discounted-price">
+                        <span>$199.95</span>
+                    </div>
+                    <div class="product-original-price">
+                        <span>$599.95</span>
+                    </div>
+                </div>
+                <div class="add-to-cart-wrapper">
+                    <div class="cart-logo">
+                        <img src="images/cart-logo.png"/>
+                    </div>
+                    <div class="add-to-cart-button" onclick="pay('paypal_click_2')">
+                        <img src="images/cart.png"/>
+                        <span>Add to cart</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="product-item">
-          <div class="product-header">
-            <span>3 Month Supply</span>
-          </div>
-          <div class="product-image-wrapper">
-            <img src="images/product.png" />
-          </div>
-          <div class="product-discount">
-            <span>Save 61%</span>
-          </div>
-          <div class="product-prices">
-            <div class="product-discounted-price">
-              <span>$119.95</span>
+            <div class="product-header">
+                <span>3 Month Supply</span>
             </div>
-            <div class="product-original-price">
-              <span>$299.95</span>
+            <div class="product-image-wrapper">
+                <img src="images/product.png"/>
             </div>
-          </div>
-          <div class="add-to-cart-wrapper">
-            <div class="cart-logo">
-              <img src="images/cart-logo.png" />
+            <div class="product-discount">
+                <span>Save 61%</span>
             </div>
-            <div class="add-to-cart-button">
-              <img src="images/cart.png" />
-              <span>Add to cart</span>
+            <div class="product-prices">
+                <div class="product-discounted-price">
+                    <span>$119.95</span>
+                </div>
+                <div class="product-original-price">
+                    <span>$299.95</span>
+                </div>
             </div>
-          </div>
+            <div class="add-to-cart-wrapper">
+                <div class="cart-logo">
+                    <img src="images/cart-logo.png"/>
+                </div>
+                <div class="add-to-cart-button" onclick="pay('paypal_click_3')">
+                    <img src="images/cart.png"/>
+                    <span>Add to cart</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="payment-container">
+    </div>
+    <div class="payment-container">
         <div class="we-accept-block">
-          <span>We accept</span>
-          <img src="images/paypal-logo.png" />
-          <img src="images/mastercard-logo.png" />
-          <img src="images/visa-logo.png" />
-          <img src="images/amex-logo.png" />
+            <span>We accept</span>
+            <img src="images/paypal-logo.png"/>
+            <img src="images/mastercard-logo.png"/>
+            <img src="images/visa-logo.png"/>
+            <img src="images/amex-logo.png"/>
         </div>
         <div class="shipping-block">
-          <img src="images/shipping-logo.png" />
-          <span>Free sheeping on all orders</span>
+            <img src="images/shipping-logo.png"/>
+            <span>Free sheeping on all orders</span>
         </div>
-      </div>
-      <div class="comma-logo">
-        <img src="images/comma.png" />
-      </div>
-      <div class="testimonial-block">
+    </div>
+    <div class="comma-logo">
+        <img src="images/comma.png"/>
+    </div>
+    <div class="testimonial-block">
         <div class="testimonial-header">
-          <span>Our Testimonials</span>
+            <span>Our Testimonials</span>
         </div>
         <div class="testimonial-list">
-          <div class="testimonial-item">
-            <div class="testimonial-main-text">
+            <div class="testimonial-item">
+                <div class="testimonial-main-text">
               <span>
                 “Who would have thought a simple supplement could totally
                 transform me. I felt younger, younger than I had in years
@@ -201,14 +183,14 @@
                 constant attention and my insatiable need to keep fucking and
                 fucking and fucking!”
               </span>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-dash"></div>
+                    <span>Jeremy C., Laredo, Texas.</span>
+                </div>
             </div>
-            <div class="testimonial-author">
-              <div class="testimonial-dash"></div>
-              <span>Jeremy C., Laredo, Texas.</span>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <div class="testimonial-main-text">
+            <div class="testimonial-item">
+                <div class="testimonial-main-text">
               <span>
                 “I was bullied throughout my teens, as my penis never really
                 “dropped” like the other kids did. The doctor told my parents
@@ -220,14 +202,14 @@
                 full 7.3 inches), I’m proud to say I’m also not a virgin
                 anymore!”
               </span>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-dash"></div>
+                    <span>Benjamin B., Greensboro, North Carolina. </span>
+                </div>
             </div>
-            <div class="testimonial-author">
-              <div class="testimonial-dash"></div>
-              <span>Benjamin B., Greensboro, North Carolina. </span>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <div class="testimonial-main-text">
+            <div class="testimonial-item">
+                <div class="testimonial-main-text">
               <span>
                 “I figured a lower sex drive was just part of getting older. I’d
                 retired, and I think it was boredom more than anything that was
@@ -239,14 +221,14 @@
                 tastes sweeter, the days are brighter, and wouldn’t you know it,
                 my pecker is working again – like a man half my age! Ha.”
               </span>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-dash"></div>
+                    <span>Steven T., Tampa, Florida. </span>
+                </div>
             </div>
-            <div class="testimonial-author">
-              <div class="testimonial-dash"></div>
-              <span>Steven T., Tampa, Florida. </span>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <div class="testimonial-main-text">
+            <div class="testimonial-item">
+                <div class="testimonial-main-text">
               <span>
                 “I’m a natural skeptic about all of this, but my curiosity was
                 spiked because I knew something was missing in our bedroom.
@@ -259,14 +241,14 @@
                 once were – just like how it was back when we first met. Thanks,
                 James, I owe you on this one.”
               </span>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-dash"></div>
+                    <span>Frank J., Omaha, Nebraska.</span>
+                </div>
             </div>
-            <div class="testimonial-author">
-              <div class="testimonial-dash"></div>
-              <span>Frank J., Omaha, Nebraska.</span>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <div class="testimonial-main-text">
+            <div class="testimonial-item">
+                <div class="testimonial-main-text">
               <span>
                 “For a guy in his 60s, I was surprised at how well this worked.
                 My wife also wanted to mention that it’s not just the size, but
@@ -279,14 +261,14 @@
                 It’s incredible -- every man deserves a chance to experience
                 this in their life.”
               </span>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-dash"></div>
+                    <span>John and Jenny F., Pittsburg, Pennsylvania. </span>
+                </div>
             </div>
-            <div class="testimonial-author">
-              <div class="testimonial-dash"></div>
-              <span>John and Jenny F., Pittsburg, Pennsylvania. </span>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <div class="testimonial-main-text">
+            <div class="testimonial-item">
+                <div class="testimonial-main-text">
               <span>
                 “I can’t believe I’m about to start talking about my penis, but
                 here goes. I mean, every guy wants to be ‘bigger,’ right? I
@@ -299,38 +281,38 @@
                 long to try something like this. It’s changed everything for me
                 down there, and I can’t thank you enough.”
               </span>
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-dash"></div>
+                    <span>Sam B., Cleveland, Ohio. </span>
+                </div>
             </div>
-            <div class="testimonial-author">
-              <div class="testimonial-dash"></div>
-              <span>Sam B., Cleveland, Ohio. </span>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="load-more">
-        <img src="images/transparent-ellipse.png" />
-        <img src="images/ellipse.png" class="ellipse" />
-        <img src="images/load-more-arrows.png" class="load-more-arrows" />
+    </div>
+    <div class="load-more">
+        <img src="images/transparent-ellipse.png"/>
+        <img src="images/ellipse.png" class="ellipse"/>
+        <img src="images/load-more-arrows.png" class="load-more-arrows"/>
         <span>Load More</span>
         <div class="load-more-dash"></div>
-      </div>
-      <div class="questions-block">
+    </div>
+    <div class="questions-block">
         <div class="questions-header">
-          <span>Frequently Asked Questions</span>
+            <span>Frequently Asked Questions</span>
         </div>
         <div class="questions-dash"></div>
         <div class="questions-list">
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>01.</span>
-              </div>
-              <div class="questions-title">
-                <span>Should I buy Iron X Male?</span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>01.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>Should I buy Iron X Male?</span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   Yes. If you’ve been struggling with a low sex drive, suffering
                   from weak and pathetic climaxes, or offering your woman
@@ -340,20 +322,20 @@
                   an insatiable kind of ferocity in the bedroom, as you give her
                   the session of her life.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>02.</span>
-              </div>
-              <div class="questions-title">
-                <span>Will Iron X Male even work for me?</span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>02.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>Will Iron X Male even work for me?</span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   Yes. In every test we’ve run, one simple fact has proven true,
                   time and time again. It doesn’t matter how old you are, What
@@ -362,40 +344,40 @@
                   Iron X Male will support your development into the man you
                   were meant to be.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>03.</span>
-              </div>
-              <div class="questions-title">
-                <span>How will I know it’s working?</span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>03.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>How will I know it’s working?</span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   It does take a little time as your body adjusts to the “new
                   normal,”. But in general, most guys start seeing results in
                   the first few weeks. The first sign is a rock-hard morning
                   wood, at an intensity you’ve not had since your teens.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>04.</span>
-              </div>
-              <div class="questions-title">
-                <span>Are there any downsides?</span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>04.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>Are there any downsides?</span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   Nope. Unlike many of the chemical-packed solutions prescribed
                   for a failing manhood, like testosterone replacement therapies
@@ -405,20 +387,20 @@
                   simply everything your body is craving, to start performing at
                   its peak.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>05.</span>
-              </div>
-              <div class="questions-title">
-                <span>What if I become too manly?</span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>05.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>What if I become too manly?</span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   It surprised me when this question kept cropping up, as it
                   seemed quite a few customers were concerned about becoming too
@@ -426,26 +408,26 @@
                   after dialing their manhood to the max. Or turning into some
                   kind of “sexual deviant” intent on fucking anything that
                   moves.
-                  <br /><br />
+                  <br/><br/>
                   You will feel more like a man, yes. You will be hornier.
                   That’s true too. But all you’re really doing, is becoming who
                   you were always meant to be. Unlocking your full potential,
                   the rest – I leave up to you.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>06.</span>
-              </div>
-              <div class="questions-title">
-                <span>Are the results permanent?</span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>06.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>Are the results permanent?</span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   Remember, Iron X Male is a supplement. That means it’s best
                   compared to a special kind of fuel, helping the engine inside
@@ -458,20 +440,20 @@
                   product, to ensure they continue to enjoy the incredible
                   results.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>07.</span>
-              </div>
-              <div class="questions-title">
-                <span>How long will it be until I get my products?</span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>07.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>How long will it be until I get my products?</span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   Once your order is received, we’ll ship it out to you directly
                   from our distribution center. It’s generally within 24 to 48
@@ -479,20 +461,20 @@
                   in the world. Delivery in the United States ranges from 4-5
                   days, and 10-15 working days to the rest of the world.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>08.</span>
-              </div>
-              <div class="questions-title">
-                <span>Will anyone know what I'm buying? </span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>08.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>Will anyone know what I'm buying? </span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   Of course not. The products you're buying are your own
                   business, we’ve taken steps to ensure the entirety of our
@@ -501,20 +483,20 @@
                   you buy Iron X Male from us, your privacy is our utmost
                   importance.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="questions-item">
-            <div class="questions-header">
-              <div class="questions-number">
-                <span>09.</span>
-              </div>
-              <div class="questions-title">
-                <span>How can I be sure this is all legit?</span>
-              </div>
-            </div>
-            <div class="questions-main">
-              <div class="question-text">
+            <div class="questions-item">
+                <div class="questions-header">
+                    <div class="questions-number">
+                        <span>09.</span>
+                    </div>
+                    <div class="questions-title">
+                        <span>How can I be sure this is all legit?</span>
+                    </div>
+                </div>
+                <div class="questions-main">
+                    <div class="question-text">
                 <span>
                   To give you complete confidence in our products, we cover
                   every customer with a no-risk, zero-hassle money-back
@@ -523,12 +505,12 @@
                   utterly satisfied, we will give you a full refund. No
                   questions asked.
                 </span>
-              </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="product-container">
+    </div>
+    <div class="product-container">
         <img src="images/header-lines.png" class="product-lines">
         <img src="images/header-arrow-1.png" class="product-left-arrow-1">
         <img src="images/header-arrow-3.png" class="product-left-arrow-2">
@@ -537,135 +519,135 @@
         <img src="images/header-arrow-3.png" class="product-left-arrow-5">
         <img src="images/header-arrow-1.png" class="product-left-arrow-6">
         <div class="product-item">
-          <div class="product-header">
-            <span>1 Month Supply</span>
-          </div>
-          <div class="product-image-wrapper">
-            <img src="images/product.png" />
-          </div>
-          <div class="product-discount">
-            <span>Save 51%</span>
-          </div>
-          <div class="product-prices">
-            <div class="product-discounted-price">
-              <span>$49.55</span>
-            </div>
-            <div class="product-original-price">
-              <span>$99.95</span>
-            </div>
-          </div>
-          <div class="add-to-cart-wrapper">
-            <div class="cart-logo">
-              <img src="images/cart-logo.png" />
-            </div>
-            <div class="add-to-cart-button">
-              <img src="images/cart.png" />
-              <span>Add to cart</span>
-            </div>
-          </div>
-        </div>
-        <div class="product-best-value-wrapper">
-          <div class="product-best-value-header">
-            <img src="images/best-value-logo.png" />
-            <span>Best Value</span>
-          </div>
-          <div class="product-best-value-item">
             <div class="product-header">
-              <span>1 Month Supply</span>
+                <span>1 Month Supply</span>
             </div>
             <div class="product-image-wrapper">
-              <img src="images/product.png" />
+                <img src="images/product.png"/>
             </div>
             <div class="product-discount">
-              <span>Save 51%</span>
+                <span>Save 51%</span>
             </div>
             <div class="product-prices">
-              <div class="product-discounted-price">
-                <span>$49.55</span>
-              </div>
-              <div class="product-original-price">
-                <span>$99.95</span>
-              </div>
+                <div class="product-discounted-price">
+                    <span>$49.55</span>
+                </div>
+                <div class="product-original-price">
+                    <span>$99.95</span>
+                </div>
             </div>
             <div class="add-to-cart-wrapper">
-              <div class="cart-logo">
-                <img src="images/cart-logo.png" />
-              </div>
-              <div class="add-to-cart-button">
-                <img src="images/cart.png" />
-                <span>Add to cart</span>
-              </div>
+                <div class="cart-logo">
+                    <img src="images/cart-logo.png"/>
+                </div>
+                <div class="add-to-cart-button" onclick="pay('paypal_click_1')">
+                    <img src="images/cart.png"/>
+                    <span>Add to cart</span>
+                </div>
             </div>
-          </div>
+        </div>
+        <div class="product-best-value-wrapper">
+            <div class="product-best-value-header">
+                <img src="images/best-value-logo.png"/>
+                <span>Best Value</span>
+            </div>
+            <div class="product-best-value-item">
+                <div class="product-header">
+                    <span>1 Month Supply</span>
+                </div>
+                <div class="product-image-wrapper">
+                    <img src="images/product.png"/>
+                </div>
+                <div class="product-discount">
+                    <span>Save 51%</span>
+                </div>
+                <div class="product-prices">
+                    <div class="product-discounted-price">
+                        <span>$49.55</span>
+                    </div>
+                    <div class="product-original-price">
+                        <span>$99.95</span>
+                    </div>
+                </div>
+                <div class="add-to-cart-wrapper">
+                    <div class="cart-logo">
+                        <img src="images/cart-logo.png"/>
+                    </div>
+                    <div class="add-to-cart-button" onclick="pay('paypal_click_2')">
+                        <img src="images/cart.png"/>
+                        <span>Add to cart</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="product-item">
-          <div class="product-header">
-            <span>1 Month Supply</span>
-          </div>
-          <div class="product-image-wrapper">
-            <img src="images/product.png" />
-          </div>
-          <div class="product-discount">
-            <span>Save 51%</span>
-          </div>
-          <div class="product-prices">
-            <div class="product-discounted-price">
-              <span>$49.55</span>
+            <div class="product-header">
+                <span>1 Month Supply</span>
             </div>
-            <div class="product-original-price">
-              <span>$99.95</span>
+            <div class="product-image-wrapper">
+                <img src="images/product.png"/>
             </div>
-          </div>
-          <div class="add-to-cart-wrapper">
-            <div class="cart-logo">
-              <img src="images/cart-logo.png" />
+            <div class="product-discount">
+                <span>Save 51%</span>
             </div>
-            <div class="add-to-cart-button">
-              <img src="images/cart.png" />
-              <span>Add to cart</span>
+            <div class="product-prices">
+                <div class="product-discounted-price">
+                    <span>$49.55</span>
+                </div>
+                <div class="product-original-price">
+                    <span>$99.95</span>
+                </div>
             </div>
-          </div>
-          <img src="images/header-dots.png" class="product-dots">
+            <div class="add-to-cart-wrapper">
+                <div class="cart-logo">
+                    <img src="images/cart-logo.png"/>
+                </div>
+                <div class="add-to-cart-button" onclick="pay('paypal_click_3')">
+                    <img src="images/cart.png"/>
+                    <span>Add to cart</span>
+                </div>
+            </div>
+            <img src="images/header-dots.png" class="product-dots">
         </div>
-      </div>
-      <div class="payment-container">
+    </div>
+    <div class="payment-container">
         <div class="we-accept-block">
-          <span>We accept</span>
-          <img src="images/paypal-logo.png" />
-          <img src="images/mastercard-logo.png" />
-          <img src="images/visa-logo.png" />
-          <img src="images/amex-logo.png" />
+            <span>We accept</span>
+            <img src="images/paypal-logo.png"/>
+            <img src="images/mastercard-logo.png"/>
+            <img src="images/visa-logo.png"/>
+            <img src="images/amex-logo.png"/>
         </div>
         <div class="shipping-block">
-          <img src="images/shipping-logo.png" />
-          <span>Free sheeping on all orders</span>
+            <img src="images/shipping-logo.png"/>
+            <span>Free sheeping on all orders</span>
         </div>
-      </div>
-      <div class="to-read">
+    </div>
+    <div class="to-read">
         <span>Click Here to Read</span>
         <div class="to-read-dash"></div>
-      </div>
-      <div class="footer">
+    </div>
+    <div class="footer">
         <div class="footer-left-triangle"></div>
         <div class="footer-right-triangle"></div>
         <div class="footer-list">
-          <a href="policy.html">Privacy</a>
-          <div class="footer-list-dot"></div>
-          <a href="disclaimer.html">Terms & Disclaimer</a>
-          <div class="footer-list-dot"></div>
-          <a>Contact</a>
-          <div class="footer-list-dot"></div>
-          <a>Affiliate</a>
+            <a href="policy.html">Privacy</a>
+            <div class="footer-list-dot"></div>
+            <a href="disclaimer.html">Terms & Disclaimer</a>
+            <div class="footer-list-dot"></div>
+            <a>Contact</a>
+            <div class="footer-list-dot"></div>
+            <a>Affiliate</a>
         </div>
         <div class="footer-links">
-          <div class="footer-links-content">
-            <div class="link-number">
-              <span>[1]</span>
+            <div class="footer-links-content">
+                <div class="link-number">
+                    <span>[1]</span>
+                </div>
+                <div class="link-uri">
+                    <span>somewebsite.com</span>
+                </div>
             </div>
-            <div class="link-uri">
-              <span>somewebsite.com</span>
-            </div>
-          </div>
         </div>
         <div class="statements-block">
           <span>
@@ -688,12 +670,12 @@
             © 2020 Copyright ironxmale.com
           </span>
         </div>
-      </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-  </body>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"
+></script>
+</body>
 </html>

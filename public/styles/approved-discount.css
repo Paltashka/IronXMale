@@ -17,6 +17,10 @@ html, body {
     margin-right: 33px;
 }
 
+.buy-now-paypal {
+    display: none;
+}
+
 .header-text {
     font-family: Work Sans;
     font-style: normal;

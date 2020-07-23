@@ -138,6 +138,10 @@ body {
   margin-left: 15px;
 }
 
+.buy-now-paypal {
+  display: none;
+}
+
 .video-block {
   display: flex;
   flex-direction: column;
@@ -357,6 +361,7 @@ body {
   background: #cd3535;
   border-radius: 0px 0px 10px 10px;
   height: 52px;
+  cursor: pointer;
 }
 
 .checkout-block span {

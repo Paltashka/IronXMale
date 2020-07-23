@@ -757,7 +757,7 @@ body {
 }
 
 .add-to-cart-paypal {
-    visibility: hidden;
+    display: none;
 }
 
 .footer {
