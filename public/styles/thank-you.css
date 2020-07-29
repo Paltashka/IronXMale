@@ -74,7 +74,7 @@ body {
     display: flex;
     align-items: center;
     background: linear-gradient(90deg, #081F65 0%, #4154AD 100%);
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .book {
@@ -98,6 +98,10 @@ body {
     font-size: 28px;
     line-height: 48px;
     color: #FFFFFF;
+}
+
+.bonuses-item img {
+    width: 28px;
 }
 
 .download-wrapper {
@@ -295,6 +299,12 @@ body {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .thank-you-block {
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .thank-you-footer {
         padding: 10px;
@@ -322,7 +332,7 @@ body {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 345px) {
     .thank-you-footer {
         padding: 0;
     }

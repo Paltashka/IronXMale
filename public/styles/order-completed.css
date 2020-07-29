@@ -25,7 +25,7 @@ body {
 
 .header-item {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 66%;
   background: linear-gradient(90deg, #980b0b 0%, #db3434 105.77%);
   align-items: center;
@@ -323,7 +323,7 @@ body {
   width: 1px;
   background: #edf4fb;
   border-radius: 10px;
-  margin-left: 114px;
+  margin-left: 50px;
 }
 
 .discounted-price {
@@ -353,7 +353,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 71px;
+  margin-left: 40px;
 }
 
 .checkout-block {
@@ -384,7 +384,10 @@ body {
   margin-top: 46px;
   background: #fbdb85;
   border-radius: 3px;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .viewing span {
@@ -405,7 +408,8 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 54px;
-  margin-left: 335px;
+  width: 51%;
+  /* margin-left: 335px; */
 }
 
 .comment-item {
@@ -497,10 +501,14 @@ body {
 .new-bought {
   display: flex;
   align-items: center;
-  width: 288px;
+  width: 240px;
   background: #ffffff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
+  position: fixed;
+  top: 90%;
+  right: 0;
+  z-index: 2;
 }
 
 .bottles-count {
@@ -519,6 +527,7 @@ body {
 
 .comments-wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .user-count {
@@ -716,19 +725,22 @@ body {
   background: #fbdb85;
   position: absolute;
   left: 55px;
-  top: -15px;
+  top: -9px;
 }
+
 
 .rectangle-left {
   position: absolute;
   left: -7px;
-  top: 6px;
+  top: 0px;
+  height: 8px;
 }
 
 .rectangle-right {
   position: absolute;
   left: 150px;
-  top: 6px;
+  top: 0px;
+  height: 8px;
 }
 
 .discount span {
