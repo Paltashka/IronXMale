@@ -41,6 +41,7 @@ html, body {
     align-items: center;
     flex-direction: column;
     margin-top: 65px;
+    min-height: 98vh;
 }
 
 .discount-product {
@@ -240,6 +241,10 @@ html, body {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
     height: 78px;
     margin-top: 14px;
+    /* position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0; */
 }
 
 .dmca-protected img {
@@ -305,7 +310,7 @@ html, body {
         margin-left: 0;
     }
     .discount-dash {
-        width: 285px;
+        width: 90%;
     }
     .subtext {
         text-align: center;
@@ -363,9 +368,3 @@ html, body {
         flex-direction: column-reverse;
     }
 }   
-
-@media screen and (min-width: 768px) {
-    .give-discount-block{
-        width: 73%;
-    }
-}

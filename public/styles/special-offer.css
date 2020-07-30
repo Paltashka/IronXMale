@@ -149,7 +149,6 @@ body {
     margin-right: 30px;
     border: 2px solid rgba(44, 64, 146, 0.16);
     box-sizing: border-box;
-    border-radius: 6px;
 }
 
 .free-shipping-btn-bold-text {
@@ -185,7 +184,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 93px;
+    width: 83px;
     height: 36px;
     margin-left: 36px;
     margin-right: 16px;
@@ -197,7 +196,7 @@ body {
 .first-step:after {
     content: "";
     position: absolute;
-    left: 127px;
+    left: 117px;
     width: 0;
     height: 0;
     border-top: 14px solid transparent;
@@ -208,7 +207,7 @@ body {
 .first-step:before {
     content: "";
     position: absolute;
-    left: 127px;
+    left: 117px;
     width: 0;
     height: 0;
     border-top: 18px solid transparent;
@@ -379,7 +378,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 93px;
+    width: 83px;
     height: 36px;
     margin-left: 36px;
     margin-right: 16px;
@@ -391,7 +390,7 @@ body {
 .second-step:after {
     content: "";
     position: absolute;
-    left: 127px;
+    left: 117px;
     width: 0;
     height: 0;
     border-top: 14px solid transparent;
@@ -402,7 +401,7 @@ body {
 .second-step:before {
     content: "";
     position: absolute;
-    left: 127px;
+    left: 117px;
     width: 0;
     height: 0;
     border-top: 18px solid transparent;
@@ -494,13 +493,14 @@ body {
     display: flex;
     position: relative;
     margin-top: 26px;
+    align-items: center;
 }
 
 .third-step {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 93px;
+    width: 83px;
     height: 36px;
     margin-left: 36px;
     margin-right: 16px;
@@ -512,7 +512,7 @@ body {
 .third-step:after {
     content: "";
     position: absolute;
-    left: 127px;
+    left: 117px;
     width: 0;
     height: 0;
     border-top: 14px solid transparent;
@@ -523,7 +523,7 @@ body {
 .third-step:before {
     content: "";
     position: absolute;
-    left: 127px;
+    left: 117px;
     width: 0;
     height: 0;
     border-top: 18px solid transparent;
@@ -568,16 +568,16 @@ body {
     background-image: url("/public/images/commissions.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 170px;
+    width: 185px;
     position: absolute;
-    left: 410px;
-    height: 33px;
+    left: 396px;
+    height: 36px;
 }
 
 .rectangle-commissions {
     position: absolute;
-    top: 31px;
-    left: 160px;
+    top: 34px;
+    left: 174px;
 }
 
 .commissions-text {
@@ -602,7 +602,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 93px;
+    width: 83px;
     height: 36px;
     margin-left: 36px;
     margin-right: 16px;
@@ -614,7 +614,7 @@ body {
 .fourth-step:after {
     content: "";
     position: absolute;
-    left: 127px;
+    left: 117px;
     width: 0;
     height: 0;
     border-top: 14px solid transparent;
@@ -625,7 +625,7 @@ body {
 .fourth-step:before {
     content: "";
     position: absolute;
-    left: 127px;
+    left: 117px;
     width: 0;
     height: 0;
     border-top: 18px solid transparent;
@@ -896,6 +896,7 @@ body {
     .fourth-step-wrapper {
         flex-direction: column;
         margin-left: 16px;
+        align-items: center;
     }
 
     .first-step,

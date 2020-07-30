@@ -150,53 +150,53 @@ body {
 
 .product-lines {
     position: absolute;
-    left: 16px;
+    left: -22vw;
     top: 97px;
 }
 
 .product-left-arrow-1 {
     position: absolute;
-    left: 47px;
+    left: -22vw;
     top: 180px;
 }
 
 .product-left-arrow-2 {
     position: absolute;
-    left: 80px;
+    left: -17vw;
     top: 347px;
 }
 
 .product-left-arrow-3 {
     position: absolute;
-    left: 12px;
-    top: 550px;
+    left: -20vw;
+    top: 590px;
 }
 
 .product-left-arrow-4 {
     transform: rotate(180deg);
     position: absolute;
-    right: 30px;
+    right: -20vw;
     top: 30px;
 }
 
 .product-left-arrow-5 {
     transform: rotate(180deg);
     position: absolute;
-    right: 70px;
+    right: -14vw;
     top: 200px;
 }
 
 .product-left-arrow-6 {
     transform: rotate(180deg);
     position: absolute;
-    right: 10px;
+    right: -23vw;
     top: 330px;
 }
 
 .product-dots {
     position: relative;
-    right: -16vw;
-    top: -179px;
+    right: -22vw;
+    top: -185px;
 }
 
 .product-header {
@@ -547,6 +547,8 @@ body {
     margin-top: 30px;
     margin-right: 130px;
     margin-left: 130px;
+    max-width: 50%;
+    align-self: center;
 }
 
 .questions-header {
@@ -573,7 +575,6 @@ body {
 .questions-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 32px;
 }
 
@@ -681,6 +682,11 @@ body {
     margin-top: 16px;
     margin-right: 41px;
     margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.link-item {
+    display: flex;
 }
 
 .link-number {
@@ -699,14 +705,18 @@ body {
     font-weight: normal;
     font-size: 15px;
     line-height: 28px;
+    display: flex;
+    flex-direction: column;
 }
 
-.link-uri span {
+.link-uri a {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 28px;
+    color: black;
+    text-decoration-color: #E83136;
 }
 
 .statements-block {
@@ -798,6 +808,13 @@ body {
     left: 0;
 }
 
+@media (max-width:  1860px) {
+    .questions-block {
+        max-width: 100%;
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main {
         width: 768px;
@@ -840,7 +857,7 @@ body {
     }
     .we-accept-block {
         width: auto;
-        height: auto;
+        height: 200px;
         flex-direction: column;
         margin-right: 0;
     }

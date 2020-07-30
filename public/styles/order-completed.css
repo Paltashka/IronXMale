@@ -323,7 +323,7 @@ body {
   width: 1px;
   background: #edf4fb;
   border-radius: 10px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .discounted-price {
@@ -353,7 +353,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 70px;
 }
 
 .checkout-block {
@@ -548,7 +548,7 @@ body {
   height: 220px;
   border-radius: 10px;
   border: 3px solid #fbdb85;
-  padding: 2px;
+  padding: 4px;
   margin-top: 85px;
 }
 
@@ -565,7 +565,7 @@ body {
 .book {
   position: absolute;
   left: 172px;
-  top: -49px;
+  top: -54px;
 }
 
 .add-book {
@@ -766,6 +766,10 @@ body {
   height: 150px;
 }
 
+.free-gift-title br {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     background: #eef4fc;
@@ -790,7 +794,7 @@ body {
     height: 360px;
   }
   .ordered-wrapper {
-    width: 288px;
+    /* width: 288px; */
   }
   .ordered {
     width: 100%;
@@ -802,7 +806,7 @@ body {
     text-align: center;
   }
   .checkout-block {
-    width: 288px;
+    /* width: 288px; */
   }
   .new-bought-wrapper {
     display: none;
@@ -812,20 +816,20 @@ body {
   }
   .book {
     left: 65px;
-    top: 187px;
+    top: 216px;
   }
   .prices {
     margin: 0;
   }
   .free-gift-wrapper {
     width: 288px;
-    height: 460px;
+    height: 490px;
     padding: 5px;
     margin-top: 40px;
   }
   .free-gift {
     width: 288px;
-    height: 460px;
+    height: 490px;
     justify-content: unset;
   }
   .free-gift-text-block {
@@ -836,18 +840,24 @@ body {
     width: 288px;
   }
   .list-item {
-    width: 288px;
+    width: 275px;
     display: flex;
     padding: 5px;
   }
   .list-item img {
     margin-right: 16px;
+    margin-left: 10px;
   }
   .free-gift-title {
     width: 288px;
     text-align: center;
     margin-top: 20px;
   }
+
+  .free-gift-title br {
+    display: block;
+  }
+
   .free-gift-title span {
     font-family: Work Sans;
     font-style: normal;
@@ -863,6 +873,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
+    margin-left: 15px;
   }
   .sets-shipping-text {
     font-family: Work Sans;
@@ -909,7 +920,8 @@ body {
     text-align: center;
   }
   .discount {
-    left: 66px;
+    /* left: 66px; */
+    left: 100px;
   }
   .vertical-dash {
     display: none;
