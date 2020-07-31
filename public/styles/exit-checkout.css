@@ -286,3 +286,9 @@ body {
         top: auto;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .discount-btn span {
+        margin-left: 20px;
+    }
+}

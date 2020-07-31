@@ -84,7 +84,7 @@ body {
   border-style: solid;
   border-top-width: 22px;
   border-bottom-width: 26px;
-  border-left-width: 14px; 
+  border-left-width: 14px;
 }
 
 .optional-upgrades:after,
@@ -324,6 +324,15 @@ body {
   background: #edf4fb;
   border-radius: 10px;
   margin-left: 40px;
+}
+
+.horizontal-dash {
+  width: 90%;
+  height: 1px;
+  background: #edf4fb;
+  border-radius: 10px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 
 .discounted-price {
@@ -728,7 +737,6 @@ body {
   top: -9px;
 }
 
-
 .rectangle-left {
   position: absolute;
   left: -7px;
@@ -768,6 +776,13 @@ body {
 
 .free-gift-title br {
   display: none;
+}
+
+.prices-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 23px;
 }
 
 @media screen and (max-width: 768px) {
@@ -820,7 +835,10 @@ body {
   }
   .prices {
     margin: 0;
+    flex-direction: row;
+    align-items: unset;
   }
+
   .free-gift-wrapper {
     width: 288px;
     height: 490px;
@@ -840,13 +858,11 @@ body {
     width: 288px;
   }
   .list-item {
-    width: 275px;
+    width: 250px;
     display: flex;
     padding: 5px;
-  }
-  .list-item img {
-    margin-right: 16px;
-    margin-left: 10px;
+    align-self: center;
+    margin: 0;
   }
   .free-gift-title {
     width: 288px;
@@ -920,12 +936,16 @@ body {
     text-align: center;
   }
   .discount {
-    /* left: 66px; */
-    left: 100px;
+    left: 83px;
   }
   .vertical-dash {
     display: none;
   }
+
+  .horizontal-dash {
+    display: block;
+  }
+
   .video-block-title {
     width: 288px;
   }
@@ -989,5 +1009,31 @@ body {
   .video-player {
     width: 240px;
     height: 150px;
+  }
+
+  .payment-item img {
+    width: 24px;
+  }
+
+  .sets {
+    justify-content: space-around;
+    margin-top: 14px;
+  }
+
+  .shipping {
+    justify-content: space-around;
+    margin-top: 14px;
+  }
+
+  .sets span {
+    width: 168px;
+  }
+
+  .shipping span {
+    width: 168px;
+  }
+
+  .payments-list {
+    margin-top: 17px;
   }
 }

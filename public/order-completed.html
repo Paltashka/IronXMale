@@ -1,122 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/order-completed.css"/>
+    <link rel="stylesheet" href="styles/order-completed.css" />
     <script
-            src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
     ></script>
-</head>
-<script>
+  </head>
+  <script>
     let time = 60 * 15,
-        display = document.querySelector('#timer');
+      display = document.querySelector("#timer");
     document.addEventListener(
-        'DOMContentLoaded',
-        () => startTimer(time, display),
-        false
+      "DOMContentLoaded",
+      () => startTimer(time, display),
+      false
     );
     let slideIndex = 1;
     showDivs(slideIndex);
 
     function changeDivs(n) {
-        showDivs((slideIndex += n));
+      showDivs((slideIndex += n));
     }
 
     function showDivs(n) {
-        const x = document.getElementsByClassName('slide');
-        if (n > x.length) {
-            slideIndex = 1;
-        }
-        if (n < 1) {
-            slideIndex = x.length;
-        }
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = 'none';
-        }
-        x[slideIndex - 1].style.display = 'flex';
+      const x = document.getElementsByClassName("slide");
+      if (n > x.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = x.length;
+      }
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "flex";
     }
 
     function renderTime(time) {
-        const blocks = document.getElementsByClassName('time-block');
-        for (let i = 0; i < blocks.length; i++) {
-            blocks[i].textContent = time[i];
-        }
+      const blocks = document.getElementsByClassName("time-block");
+      for (let i = 0; i < blocks.length; i++) {
+        blocks[i].textContent = time[i];
+      }
     }
 
     function startTimer(duration, display) {
-        let timer = duration,
-            minutes,
-            seconds;
-        setInterval(() => {
-            minutes = parseInt(timer / 60, 10);
-            seconds = parseInt(timer % 60, 10);
+      let timer = duration,
+        minutes,
+        seconds;
+      setInterval(() => {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
 
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
 
-            renderTime('' + minutes + seconds);
+        renderTime("" + minutes + seconds);
 
-            if (--timer < 0) {
-                timer = duration;
-            }
-        }, 1000);
+        if (--timer < 0) {
+          timer = duration;
+        }
+      }, 1000);
     }
 
     function pay(btnName) {
-        $(`#${btnName}`).click();
+      $(`#${btnName}`).click();
     }
+  </script>
 
-    
-</script>
-
-<script>
-    $(document).scroll(() => {
-        
-    })
-</script>
-<body>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="buy-now-paypal">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="R9JZZ3RR87EQ8">
-    <input id="paypal_click" type="image" src="https://www.paypalobjects.com/en_GB/SG/i/btn/btn_buynowCC_LG.gif"
-           border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
-<div class="main">
-    <div class="header">
+  <script>
+    $(document).scroll(() => {});
+  </script>
+  <body>
+    <form
+      action="https://www.paypal.com/cgi-bin/webscr"
+      method="post"
+      target="_top"
+      class="buy-now-paypal"
+    >
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="R9JZZ3RR87EQ8" />
+      <input
+        id="paypal_click"
+        type="image"
+        src="https://www.paypalobjects.com/en_GB/SG/i/btn/btn_buynowCC_LG.gif"
+        border="0"
+        name="submit"
+        alt="PayPal – The safer, easier way to pay online!"
+      />
+      <img
+        alt=""
+        border="0"
+        src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif"
+        width="1"
+        height="1"
+      />
+    </form>
+    <div class="main">
+      <div class="header">
         <div class="header-item">
-            <div class="initial-order">
-                <img src="images/white-arrow.svg"/>
-                <span>Initial Order</span>
-                <div class="triangle-wrapper"></div>
-            </div>
-            <div class="optional-upgrades">
-                <img src="images/white-arrow.svg"/>
-                <span>Optional upgrades</span>
-            </div>
+          <div class="initial-order">
+            <img src="images/white-arrow.svg" />
+            <span>Initial Order</span>
+            <div class="triangle-wrapper"></div>
+          </div>
+          <div class="optional-upgrades">
+            <img src="images/white-arrow.svg" />
+            <span>Optional upgrades</span>
+          </div>
         </div>
         <div class="order-completed">
-            <img src="images/red-arrow.svg"/>
-            <span>Order Completed</span>
+          <img src="images/red-arrow.svg" />
+          <span>Order Completed</span>
         </div>
-    </div>
-    <div class="content">
+      </div>
+      <div class="content">
         <div class="video-block">
-            <div class="video-block-text">
+          <div class="video-block-text">
             <span class="video-block-title">
-              <span class="bold">WAIT!</span><br/>
+              <span class="bold">WAIT!</span><br />
               Here's an exclusive offer to complement your order!
             </span>
-                <span class="video-block-subtext">
+            <span class="video-block-subtext">
               Add this to your order in
-              <br class="timer-new-line"/>
+              <br class="timer-new-line" />
               <span class="timer" id="timer">
                 <span class="time-block"></span>
                 <span class="time-block"></span>
@@ -124,125 +137,128 @@
                 <span class="time-block"></span>
                 <span class="time-block"></span>
               </span>
-              <br class="timer-new-line"/>
-              <br class="timer-new-line"/>
+              <br class="timer-new-line" />
+              <br class="timer-new-line" />
               <span class="video-block-subtext">
-                and get <span class="discount-percentage">76% discount .</span> We
-                will ship it with your initial order.
+                and get
+                <span class="discount-percentage">76% discount .</span> We will
+                ship it with your initial order.
               </span>
             </span>
-
-            </div>
-            <div class="video-player-wrapper">
-                <div class="video-player"></div>
-            </div>
+          </div>
+          <div class="video-player-wrapper">
+            <div class="video-player"></div>
+          </div>
         </div>
         <div class="ordered-wrapper">
-            <div class="ordered">
-                <div class="supplies">
-                    <img src="images/product-group.svg"/>
-                </div>
-                <div class="payments">
-                    <div class="payments-title">
-                        <span>6 Bottles of IronXMale</span>
-                    </div>
-                    <div class="sets-shipping">
-                        <div class="sets">
-                            <img src="images/sets.svg"/>
-                            <span class="sets-shipping-text">
+          <div class="ordered">
+            <div class="supplies">
+              <img src="images/product-group.svg" />
+            </div>
+            <div class="payments">
+              <div class="payments-title">
+                <span>6 Bottles of IronXMale</span>
+              </div>
+              <div class="sets-shipping">
+                <div class="sets">
+                  <img src="images/sets.svg" />
+                  <span class="sets-shipping-text">
                     Only <span class="blue-text">5 sets left </span>
                     in stock - order soon
                   </span>
-                        </div>
-                        <div class="shipping">
-                            <img src="images/plane.svg"/>
-                            <span class="sets-shipping-text">
+                </div>
+                <div class="shipping">
+                  <img src="images/plane.svg" />
+                  <span class="sets-shipping-text">
                     <span class="blue-text">Free Shipping</span>
                     on all orders today
                   </span>
-                        </div>
-                    </div>
-                    <div class="payments-list">
-                        <div class="payment-item">
-                            <img src="images/visa-logo.svg" width="36px" height="11px"/>
-                        </div>
-                        <div class="payment-item">
-                            <img
-                                    src="images/mastercard-logo.svg"
-                                    width="40px"
-                                    height="24px"
-                            />
-                        </div>
-                        <div class="payment-item">
-                            <img src="images/amex-logo.svg" width="49px" height="12px"/>
-                        </div>
-                        <div class="payment-item">
-                            <img src="images/discover.svg" width="46px" height="8px"/>
-                        </div>
-                        <div class="payment-item">
+                </div>
+              </div>
+              <div class="payments-list">
+                <div class="payment-item">
+                  <img src="images/visa-logo.svg" width="36px" height="11px" />
+                </div>
+                <div class="payment-item">
+                  <img
+                    src="images/mastercard-logo.svg"
+                    width="40px"
+                    height="24px"
+                  />
+                </div>
+                <div class="payment-item">
+                  <img src="images/amex-logo.svg" width="49px" height="12px" />
+                </div>
+                <div class="payment-item">
+                  <img src="images/discover.svg" width="46px" height="8px" />
+                </div>
+                <!-- <div class="payment-item maestro-logo">
                             <img src="images/maestro-logo.svg"/>
-                        </div>
-                        <div class="payment-item">
-                            <img
-                                    src="images/paypal-order-completed.svg"
-                                    width="47px"
-                                    height="13px"
-                            />
-                        </div>
-                    </div>
+                        </div> -->
+                <div class="payment-item">
+                  <img
+                    src="images/paypal-order-completed.svg"
+                    width="47px"
+                    height="13px"
+                  />
                 </div>
-                <div class="vertical-dash"></div>
-                <div class="prices">
-                    <img src="images/90_days.svg"/>
-                    <span class="discounted-price">
-                $129.99
-              </span>
-                    <span class="original-price">
-                $539.70
-              </span>
-                </div>
-                <div class="discount">
-                    <span>76% Discount</span>
-                    <img src="images/rectangle-left.svg" class="rectangle-left"/>
-                    <img src="images/rectangle-right.svg" class="rectangle-right"/>
-                </div>
+              </div>
             </div>
-            <div class="checkout-block" onclick="pay('paypal_click')">
-                <img src="images/shopping-cart.svg"/>
-                <span>Proceed to checkout</span>
+            <div class="vertical-dash"></div>
+            <div class="horizontal-dash"></div>
+            <div class="prices">
+              <img src="images/90_days.svg" />
+              <div class="prices-text">
+                <span class="discounted-price">
+                    $129.99
+                  </span>
+                  <span class="original-price">
+                    $539.70
+                  </span>
+              </div>
             </div>
+            <div class="discount">
+              <span>76% Discount</span>
+              <img src="images/rectangle-left.svg" class="rectangle-left" />
+              <img src="images/rectangle-right.svg" class="rectangle-right" />
+            </div>
+          </div>
+          <div class="checkout-block" onclick="pay('paypal_click')">
+            <img src="images/shopping-cart.svg" />
+            <span>Proceed to checkout</span>
+          </div>
         </div>
         <div class="viewing">
-            <img src="images/eye.svg"/>
-            <span>184 People are viewing this item</span>
+          <img src="images/eye.svg" />
+          <span>184 People are viewing this item</span>
         </div>
         <div class="slider">
-            <div class="comment-item slide">
-                <div class="comment-text">
+          <div class="comment-item slide">
+            <div class="comment-text">
               <span
-              >I bought this to extend wifi into my backyard from an upstairs
+                >I bought this to extend wifi into my backyard from an upstairs
                 window, where I had really slow speeds when I was on my phone or
                 latop while relaxing in the yard. I have to say it works
                 adnirable, I can now sit out on my back deck and enjoy straming
                 my shows in peace!</span
               >
-                </div>
-                <div class="author">
-                    <div class="avatar">
-                        <img src="images/avatar1.svg"/>
-                    </div>
-                    <div class="name-date-wrapper">
-                        <div class="author-name">
-                            <span>Jordan A.</span>
-                        </div>
-                        <div class="date">
-                            <span>April 20, 2019 17:55 PM</span>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="comment-item slide">
-                <div class="comment-text">
+            <div class="author">
+              <div class="avatar">
+                <img src="images/avatar1.svg" />
+              </div>
+              <div class="name-date-wrapper">
+                <div class="author-name">
+                  <span>Jordan A.</span>
+                </div>
+                <div class="date">
+                  <span>April 20, 2019 17:55 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment-item slide">
+            <div class="comment-text">
               <span>
                 I bought this to extend wifi into my backyard from an upstairs
                 window, where I had really slow speeds when I was on my phone or
@@ -250,23 +266,23 @@
                 adnirable, I can now sit out on my back deck and enjoy straming
                 my shows in peace!
               </span>
-                </div>
-                <div class="author">
-                    <div class="avatar">
-                        <img src="images/avatar2.svg"/>
-                    </div>
-                    <div class="name-date-wrapper">
-                        <div class="author-name">
-                            <span>Mailly B.</span>
-                        </div>
-                        <div class="date">
-                            <span>April 20, 2019 17:55 PM</span>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="comment-item slide">
-                <div class="comment-text">
+            <div class="author">
+              <div class="avatar">
+                <img src="images/avatar2.svg" />
+              </div>
+              <div class="name-date-wrapper">
+                <div class="author-name">
+                  <span>Mailly B.</span>
+                </div>
+                <div class="date">
+                  <span>April 20, 2019 17:55 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment-item slide">
+            <div class="comment-text">
               <span>
                 I bought this to extend wifi into my backyard from an upstairs
                 window, where I had really slow speeds when I was on my phone or
@@ -274,23 +290,23 @@
                 adnirable, I can now sit out on my back deck and enjoy straming
                 my shows in peace!
               </span>
-                </div>
-                <div class="author">
-                    <div class="avatar">
-                        <img src="images/avatar3.svg"/>
-                    </div>
-                    <div class="name-date-wrapper">
-                        <div class="author-name">
-                            <span>Keiley J.</span>
-                        </div>
-                        <div class="date">
-                            <span>April 20, 2019 17:55 PM</span>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="comment-item slide">
-                <div class="comment-text">
+            <div class="author">
+              <div class="avatar">
+                <img src="images/avatar3.svg" />
+              </div>
+              <div class="name-date-wrapper">
+                <div class="author-name">
+                  <span>Keiley J.</span>
+                </div>
+                <div class="date">
+                  <span>April 20, 2019 17:55 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment-item slide">
+            <div class="comment-text">
               <span>
                 I bought this to extend wifi into my backyard from an upstairs
                 window, where I had really slow speeds when I was on my phone or
@@ -298,259 +314,264 @@
                 adnirable, I can now sit out on my back deck and enjoy straming
                 my shows in peace!
               </span>
-                </div>
-                <div class="author">
-                    <div class="avatar">
-                        <img src="images/avatar4.svg"/>
-                    </div>
-                    <div class="name-date-wrapper">
-                        <div class="author-name">
-                            <span>Dao L.</span>
-                        </div>
-                        <div class="date">
-                            <span>April 20, 2019 17:55 PM</span>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="slider-arrows">
-                <div class="left-arrow">
-                    <img src="images/left-arrow.svg" onclick="changeDivs(-1)"/>
+            <div class="author">
+              <div class="avatar">
+                <img src="images/avatar4.svg" />
+              </div>
+              <div class="name-date-wrapper">
+                <div class="author-name">
+                  <span>Dao L.</span>
                 </div>
-                <div class="right-arrow">
-                    <img src="images/right-arrow.svg" onclick="changeDivs(+1)"/>
+                <div class="date">
+                  <span>April 20, 2019 17:55 PM</span>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="slider-arrows">
+            <div class="left-arrow">
+              <img src="images/left-arrow.svg" onclick="changeDivs(-1)" />
+            </div>
+            <div class="right-arrow">
+              <img src="images/right-arrow.svg" onclick="changeDivs(+1)" />
+            </div>
+          </div>
         </div>
         <div class="comments-wrapper">
-            <div class="comments">
-                <div class="comment-item">
-                    <div class="comment-text">
+          <div class="comments">
+            <div class="comment-item">
+              <div class="comment-text">
                 <span
-                >I bought this to extend wifi into my backyard from an
+                  >I bought this to extend wifi into my backyard from an
                   upstairs window, where I had really slow speeds when I was on
                   my phone or latop while relaxing in the yard. I have to say it
                   works adnirable, I can now sit out on my back deck and enjoy
                   straming my shows in peace!</span
                 >
-                    </div>
-                    <div class="author">
-                        <div class="avatar">
-                            <img src="images/avatar1.svg"/>
-                        </div>
-                        <div class="name-date-wrapper">
-                            <div class="author-name">
-                                <span>Jordan A.</span>
-                            </div>
-                            <div class="date">
-                                <span>April 20, 2019 17:55 PM</span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="author">
+                <div class="avatar">
+                  <img src="images/avatar1.svg" />
                 </div>
-                <div class="comment-item">
-                    <div class="comment-text">
-                <span>
-                  I bought this to extend wifi into my backyard from an upstairs
-                  window, where I had really slow speeds when I was on my phone
-                  or latop while relaxing in the yard. I have to say it works
-                  adnirable, I can now sit out on my back deck and enjoy
-                  straming my shows in peace!
-                </span>
-                    </div>
-                    <div class="author">
-                        <div class="avatar">
-                            <img src="images/avatar2.svg"/>
-                        </div>
-                        <div class="name-date-wrapper">
-                            <div class="author-name">
-                                <span>Mailly B.</span>
-                            </div>
-                            <div class="date">
-                                <span>April 20, 2019 17:55 PM</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="name-date-wrapper">
+                  <div class="author-name">
+                    <span>Jordan A.</span>
+                  </div>
+                  <div class="date">
+                    <span>April 20, 2019 17:55 PM</span>
+                  </div>
                 </div>
-                <div class="comment-item">
-                    <div class="comment-text">
-                <span>
-                  I bought this to extend wifi into my backyard from an upstairs
-                  window, where I had really slow speeds when I was on my phone
-                  or latop while relaxing in the yard. I have to say it works
-                  adnirable, I can now sit out on my back deck and enjoy
-                  straming my shows in peace!
-                </span>
-                    </div>
-                    <div class="author">
-                        <div class="avatar">
-                            <img src="images/avatar3.svg"/>
-                        </div>
-                        <div class="name-date-wrapper">
-                            <div class="author-name">
-                                <span>Keiley J.</span>
-                            </div>
-                            <div class="date">
-                                <span>April 20, 2019 17:55 PM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment-item">
-                    <div class="comment-text">
-                <span>
-                  I bought this to extend wifi into my backyard from an upstairs
-                  window, where I had really slow speeds when I was on my phone
-                  or latop while relaxing in the yard. I have to say it works
-                  adnirable, I can now sit out on my back deck and enjoy
-                  straming my shows in peace!
-                </span>
-                    </div>
-                    <div class="author">
-                        <div class="avatar">
-                            <img src="images/avatar4.svg"/>
-                        </div>
-                        <div class="name-date-wrapper">
-                            <div class="author-name">
-                                <span>Dao L.</span>
-                            </div>
-                            <div class="date">
-                                <span>April 20, 2019 17:55 PM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="new-bought-wrapper">
-                <div class="new-bought">
-                    <div class="new-bought-dash"></div>
-                    <div class="new-bought-text">
+            <div class="comment-item">
+              <div class="comment-text">
+                <span>
+                  I bought this to extend wifi into my backyard from an upstairs
+                  window, where I had really slow speeds when I was on my phone
+                  or latop while relaxing in the yard. I have to say it works
+                  adnirable, I can now sit out on my back deck and enjoy
+                  straming my shows in peace!
+                </span>
+              </div>
+              <div class="author">
+                <div class="avatar">
+                  <img src="images/avatar2.svg" />
+                </div>
+                <div class="name-date-wrapper">
+                  <div class="author-name">
+                    <span>Mailly B.</span>
+                  </div>
+                  <div class="date">
+                    <span>April 20, 2019 17:55 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="comment-text">
+                <span>
+                  I bought this to extend wifi into my backyard from an upstairs
+                  window, where I had really slow speeds when I was on my phone
+                  or latop while relaxing in the yard. I have to say it works
+                  adnirable, I can now sit out on my back deck and enjoy
+                  straming my shows in peace!
+                </span>
+              </div>
+              <div class="author">
+                <div class="avatar">
+                  <img src="images/avatar3.svg" />
+                </div>
+                <div class="name-date-wrapper">
+                  <div class="author-name">
+                    <span>Keiley J.</span>
+                  </div>
+                  <div class="date">
+                    <span>April 20, 2019 17:55 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="comment-text">
+                <span>
+                  I bought this to extend wifi into my backyard from an upstairs
+                  window, where I had really slow speeds when I was on my phone
+                  or latop while relaxing in the yard. I have to say it works
+                  adnirable, I can now sit out on my back deck and enjoy
+                  straming my shows in peace!
+                </span>
+              </div>
+              <div class="author">
+                <div class="avatar">
+                  <img src="images/avatar4.svg" />
+                </div>
+                <div class="name-date-wrapper">
+                  <div class="author-name">
+                    <span>Dao L.</span>
+                  </div>
+                  <div class="date">
+                    <span>April 20, 2019 17:55 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="new-bought-wrapper">
+            <div class="new-bought">
+              <div class="new-bought-dash"></div>
+              <div class="new-bought-text">
                 <span class="user-count">
                   <span class="blue">+1</span>
                   User Bought
                 </span>
-                        <span class="bottles-count">
+                <span class="bottles-count">
                   “3 Bottles of IronXMale”
                 </span>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div class="free-gift-wrapper">
-            <div class="free-gift">
-                <div class="book">
-                    <img src="images/book.png"/>
-                </div>
-                <img src="images/book-object-1.svg" class="book-object-1">
-                <img src="images/book-object-2.svg" class="book-object-2">
-                <img src="images/book-object-3.svg" class="book-object-3">
-                <div class="free-gift-text-block">
-                    <div class="free-gift-title">
-                        <span>Free GIFT! <br> eBook for every order</span>
-                    </div>
-                    <div class="free-gift-text-list">
-                        <div class="list-item">
-                            <img src="images/list-tick.svg"/>
-                            <span>Available for each order today</span>
-                        </div>
-                        <div class="list-item">
-                            <img src="images/list-tick.svg"/>
-                            <span>Fully FREE and no additional fees</span>
-                        </div>
-                        <div class="list-item">
-                            <img src="images/list-tick.svg"/>
-                            <span>Get more information about our product</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="add-book">
-                    <img src="images/add-book.png"/>
-                </div>
+          <div class="free-gift">
+            <div class="book">
+              <img src="images/book.png" />
             </div>
+            <img src="images/book-object-1.svg" class="book-object-1" />
+            <img src="images/book-object-2.svg" class="book-object-2" />
+            <img src="images/book-object-3.svg" class="book-object-3" />
+            <div class="free-gift-text-block">
+              <div class="free-gift-title">
+                <span
+                  >Free GIFT! <br />
+                  eBook for every order</span
+                >
+              </div>
+              <div class="free-gift-text-list">
+                <div class="list-item">
+                  <img src="images/list-tick.svg" />
+                  <span>Available for each order today</span>
+                </div>
+                <div class="list-item">
+                  <img src="images/list-tick.svg" />
+                  <span>Fully FREE and no additional fees</span>
+                </div>
+                <div class="list-item">
+                  <img src="images/list-tick.svg" />
+                  <span>Get more information about our product</span>
+                </div>
+              </div>
+            </div>
+            <div class="add-book">
+              <img src="images/add-book.png" />
+            </div>
+          </div>
         </div>
         <div class="ordered-wrapper">
-            <div class="ordered">
-                <div class="supplies">
-                    <img src="images/product-group.svg"/>
-                </div>
-                <div class="payments">
-                    <div class="payments-title">
-                        <span>6 Bottles of IronXMale</span>
-                    </div>
-                    <div class="sets-shipping">
-                        <div class="sets">
-                            <img src="images/sets.svg"/>
-                            <span class="sets-shipping-text">
+          <div class="ordered">
+            <div class="supplies">
+              <img src="images/product-group.svg" />
+            </div>
+            <div class="payments">
+              <div class="payments-title">
+                <span>6 Bottles of IronXMale</span>
+              </div>
+              <div class="sets-shipping">
+                <div class="sets">
+                  <img src="images/sets.svg" />
+                  <span class="sets-shipping-text">
                     Only <span class="blue-text">5 sets left </span>
                     in stock - order soon
                   </span>
-                        </div>
-                        <div class="shipping">
-                            <img src="images/plane.svg"/>
-                            <span class="sets-shipping-text">
+                </div>
+                <div class="shipping">
+                  <img src="images/plane.svg" />
+                  <span class="sets-shipping-text">
                     <span class="blue-text">Free Shipping</span>
                     on all orders today
                   </span>
-                        </div>
-                    </div>
-                    <div class="payments-list">
-                        <div class="payment-item">
-                            <img src="images/visa-logo.svg" width="36px" height="11px"/>
-                        </div>
-                        <div class="payment-item">
-                            <img
-                                    src="images/mastercard-logo.svg"
-                                    width="40px"
-                                    height="24px"
-                            />
-                        </div>
-                        <div class="payment-item">
-                            <img src="images/amex-logo.svg" width="49px" height="12px"/>
-                        </div>
-                        <div class="payment-item">
-                            <img src="images/discover.svg" width="46px" height="8px"/>
-                        </div>
-                        <div class="payment-item">
+                </div>
+              </div>
+              <div class="payments-list">
+                <div class="payment-item">
+                  <img src="images/visa-logo.svg" width="36px" height="11px" />
+                </div>
+                <div class="payment-item">
+                  <img
+                    src="images/mastercard-logo.svg"
+                    width="40px"
+                    height="24px"
+                  />
+                </div>
+                <div class="payment-item">
+                  <img src="images/amex-logo.svg" width="49px" height="12px" />
+                </div>
+                <div class="payment-item">
+                  <img src="images/discover.svg" width="46px" height="8px" />
+                </div>
+                <!-- <div class="payment-item maestro-logo">
                             <img src="images/maestro-logo.svg"/>
-                        </div>
-                        <div class="payment-item">
-                            <img
-                                    src="images/paypal-order-completed.svg"
-                                    width="47px"
-                                    height="13px"
-                            />
-                        </div>
-                    </div>
+                        </div> -->
+                <div class="payment-item">
+                  <img
+                    src="images/paypal-order-completed.svg"
+                    width="47px"
+                    height="13px"
+                  />
                 </div>
-                <div class="vertical-dash"></div>
-                <div class="prices">
-                    <img src="images/cart-logo.svg"/>
-                    <span class="discounted-price">
-                $129.99
-              </span>
-                    <span class="original-price">
-                $539.70
-              </span>
-                </div>
-                <div class="discount">
-                    <span>76% Discount</span>
-                    <img src="images/rectangle-left.svg" class="rectangle-left"/>
-                    <img src="images/rectangle-right.svg" class="rectangle-right"/>
-                </div>
+              </div>
             </div>
-            <div class="checkout-block" onclick="pay('paypal_click')">
-                <img src="images/shopping-cart.svg"/>
-                <span>Proceed to checkout</span>
+            <div class="vertical-dash"></div>
+            <div class="prices">
+              <img src="images/cart-logo.svg" />
+              <div class="prices-text">
+                <span class="discounted-price">
+                    $129.99
+                  </span>
+                  <span class="original-price">
+                    $539.70
+                  </span>
+              </div>
             </div>
+            <div class="discount">
+              <span>76% Discount</span>
+              <img src="images/rectangle-left.svg" class="rectangle-left" />
+              <img src="images/rectangle-right.svg" class="rectangle-right" />
+            </div>
+          </div>
+          <div class="checkout-block" onclick="pay('paypal_click')">
+            <img src="images/shopping-cart.svg" />
+            <span>Proceed to checkout</span>
+          </div>
         </div>
         <div class="vertical-dash"></div>
-    </div>
-    <div class="ordered-text">
+      </div>
+      <div class="ordered-text">
         <div class="ordered-bottom-text">
           <span>
             No thanks, I understand that this is the ONLY time I can get
             IronXMale at such a big discount.
-            <br/>
+            <br />
             And by clicking here I am forfeiting my chance to grab this special
             discount.
           </span>
@@ -565,31 +586,31 @@
             exercise program.
           </span>
         </div>
-    </div>
-    <div class="footer">
+      </div>
+      <div class="footer">
         <div class="dmca-protected">
-            <img src="images/dmca.svg"/>
+          <img src="images/dmca.svg" />
         </div>
         <div class="footer-links">
-            <div class="footer-link-item">
-                <a href="policy.html">Privacy</a>
-            </div>
-            <div class="footer-link-item">
-                <a href="disclaimer.html">Terms & Disclaimer</a>
-            </div>
-            <div class="footer-link-item">
-                <a href="">Support</a>
-            </div>
+          <div class="footer-link-item">
+            <a href="policy.html">Privacy</a>
+          </div>
+          <div class="footer-link-item">
+            <a href="disclaimer.html">Terms & Disclaimer</a>
+          </div>
+          <div class="footer-link-item">
+            <a href="">Support</a>
+          </div>
         </div>
         <div class="reserved">
-            <span>© All Rights Reserved.</span>
+          <span>© All Rights Reserved.</span>
         </div>
+      </div>
     </div>
-</div>
-<script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"
-></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
