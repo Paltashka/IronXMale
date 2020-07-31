@@ -29,19 +29,96 @@ body {
     margin-top: 20px;
 }
 
+.thank-you-header-text {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.thank-you-header {
+    margin-top: 64px;
+}
+
 .thank-you-header span {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.email {
+    font-weight: bold;
+    color: #2D4193;
+}
+
+.purchase-appearance {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    background: linear-gradient(53.55deg, rgba(255, 208, 43, 0.2) 21.89%, rgba(245, 209, 16, 0.2) 61.25%);
+    border-radius: 3px;
+}
+
+.guide-block {
+    background: rgba(45, 65, 147, 0.05);
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.guide-block span {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+.books {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 42px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+}
+
+.book a {
+    margin-top: 22px;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D4193;
 }
 
 .thank-you-text-block {
     display: flex;
     flex-direction: column;
-    height: 200px;
     justify-content: space-evenly;
-    padding: 50px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .thank-you-text {
@@ -55,53 +132,14 @@ body {
     font-weight: bold;
 }
 
+.book-text {
+    display: flex;
+}
+
 .thank-you-footer {
     display: flex;
     padding: 50px 113px 80px;
     flex-direction: column;
-}
-
-.book-block-wrapper {
-    background: #FFFFFF;
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 6px;
-    border: 2px dashed red;
-    padding: 2px;
-    width: 90%;
-}
-
-.book-block {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(90deg, #081F65 0%, #4154AD 100%);
-    justify-content: space-around;
-}
-
-.book {
-    margin-bottom: -4px;
-}
-
-.bonuses-title span {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.bonuses-item span {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 48px;
-    color: #FFFFFF;
-}
-
-.bonuses-item img {
-    width: 28px;
 }
 
 .download-wrapper {
@@ -149,6 +187,12 @@ body {
     font-weight: normal;
     font-size: 21px;
     line-height: 28px;
+}
+
+.signature-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .signature {
@@ -239,6 +283,12 @@ body {
     color: #2d4193;
 }
 
+@media (max-width: 1154px) {
+    .books {
+        flex-direction: column;
+    }
+} 
+
 @media screen and (max-width: 1200px) {
     .thank-you-header {
         text-align: center;
@@ -250,27 +300,6 @@ body {
 
     .download-wrapper {
         flex-direction: column;
-    }
-
-
-
-    .book-block {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .bonuses {
-        text-align: center;
-    }
-
-    .book {
-        display: none;
-    }
-
-    .bonuses-list {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
     }
 
     .download-btn {
@@ -293,19 +322,7 @@ body {
     }
 }
 
-@media screen and (max-width: 714px) {
-    .book-block {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .thank-you-block {
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 650px) {
     .thank-you-footer {
         padding: 10px;
     }
@@ -314,6 +331,7 @@ body {
     }
     .pdf-reader {
         margin-top: 30px;
+        align-items: center;
     }
 
     .reader-title {
@@ -327,8 +345,19 @@ body {
         justify-content: center;
     }
 
-    .signature {
+    .thank-you-block {
+        width: auto;
+    }
+
+    .download-instruction {
         align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .signature-name {
+        font-size: 20px;
     }
 }
 
@@ -344,13 +373,17 @@ body {
     .reader-link a {
         font-size: medium;
     }
+}
 
-    .bonuses-title span {
-        font-size: 26px;
+@media screen and (max-width: 868px) {
+    .thank-you-header span {
+        font-size: 37px;
     }
+}
 
-    .bonuses-item span {
-        font-size: 20px;
-        line-height: 35px;
+@media screen and (max-width: 345px) {
+    .signature-wrapper {
+        flex-direction: column;
+        align-items: center;
     }
 }

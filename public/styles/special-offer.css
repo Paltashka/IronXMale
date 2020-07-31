@@ -177,7 +177,7 @@ body {
 }
 
 .first-step-wrapper {
-  display: flex;
+  display: -webkit-flex;
   position: relative;
   align-items: center;
 }
@@ -371,7 +371,7 @@ body {
 }
 
 .second-step-wrapper {
-  display: flex;
+  display: -webkit-flex;
   position: relative;
   margin-top: 26px;
   align-items: center;
@@ -493,7 +493,7 @@ body {
 }
 
 .third-step-wrapper {
-  display: flex;
+  display: -webkit-flex;
   position: relative;
   margin-top: 26px;
   align-items: center;
@@ -557,7 +557,7 @@ body {
 }
 
 .fourth-step-wrapper {
-  display: flex;
+  display: -webkit-flex;
   position: relative;
   margin-top: 26px;
   align-items: center;
@@ -898,6 +898,7 @@ body {
   .second-step-wrapper,
   .third-step-wrapper,
   .fourth-step-wrapper {
+    display: -webkit-flex;
     flex-direction: column;
     margin-left: 16px;
     align-items: unset;
