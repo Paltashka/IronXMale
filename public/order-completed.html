@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N6D3B7G");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-TNZXGND');</script>
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -83,8 +90,14 @@
     $(document).scroll(() => {});
   </script>
   <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNZXGND"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TNZXGND"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
     <form
       action="https://www.paypal.com/cgi-bin/webscr"
       method="post"
@@ -217,11 +230,11 @@
               <img src="images/90_days.svg" />
               <div class="prices-text">
                 <span class="discounted-price">
-                    $129.99
-                  </span>
-                  <span class="original-price">
-                    $539.70
-                  </span>
+                  $129.99
+                </span>
+                <span class="original-price">
+                  $539.70
+                </span>
               </div>
             </div>
             <div class="discount">
@@ -553,11 +566,11 @@
               <img src="images/cart-logo.svg" />
               <div class="prices-text">
                 <span class="discounted-price">
-                    $129.99
-                  </span>
-                  <span class="original-price">
-                    $539.70
-                  </span>
+                  $129.99
+                </span>
+                <span class="original-price">
+                  $539.70
+                </span>
               </div>
             </div>
             <div class="discount">
