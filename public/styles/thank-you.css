@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 70%;
+    width: 60%;
     margin-top: 68px;
     align-items: center;
 }
@@ -103,11 +103,10 @@ body {
 }
 
 .book a {
-    margin-top: 22px;
     text-align: center;
     font-family: Source Sans Pro;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     color: #2D4193;
@@ -134,11 +133,14 @@ body {
 
 .book-text {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 22px;
 }
 
 .thank-you-footer {
     display: flex;
-    padding: 50px 113px 80px;
+    padding: 50px 61px 80px;
     flex-direction: column;
 }
 
@@ -219,6 +221,14 @@ body {
     color: #2D4193;
 }
 
+.reader-title {
+    display: flex;
+}
+
+.reader-title img {
+    margin-right: 15px;
+}
+
 .reader-link a {
     font-family: Source Sans Pro;
     font-style: normal;
@@ -283,7 +293,7 @@ body {
     color: #2d4193;
 }
 
-@media (max-width: 1154px) {
+@media (max-width: 1275px) {
     .books {
         flex-direction: column;
     }
@@ -322,7 +332,7 @@ body {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 675px) {
     .thank-you-footer {
         padding: 10px;
     }
@@ -347,6 +357,8 @@ body {
 
     .thank-you-block {
         width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .download-instruction {
@@ -377,7 +389,7 @@ body {
 
 @media screen and (max-width: 868px) {
     .thank-you-header span {
-        font-size: 37px;
+        font-size: 27px;
     }
 }
 

@@ -292,3 +292,21 @@ body {
         margin-left: 20px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .main {
+        background: white;
+    }
+
+    .discount-block {
+        width: 87%;
+    }
+
+    .discount-btn {
+        width: 83%;
+    }
+
+    .discount-btn span {
+        margin-left: 40px;
+    }
+}

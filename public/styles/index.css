@@ -204,6 +204,10 @@ body {
     margin-bottom: 28px;
 }
 
+.best-value-image {
+    width: 100%;
+}
+
 .product-header span {
     font-family: Lato;
     font-style: normal;
@@ -309,7 +313,7 @@ body {
     box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-top: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
