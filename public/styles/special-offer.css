@@ -1039,7 +1039,7 @@ body {
   }
 
   .footer {
-    margin-top: 370px;
+    margin-top: 0;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     height: 215px;
@@ -1142,4 +1142,10 @@ body {
 
 .iti__flag {
   background-image: url("/public/images/flags.png") !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  .contact-information {
+    height: 1300px;
+  }
 }

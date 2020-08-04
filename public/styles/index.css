@@ -949,7 +949,7 @@ body {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 652px) {
     .footer-links-content {
         margin-left: 0;
         margin-right: 0;
@@ -977,5 +977,22 @@ body {
 
     .best-value-image {
         width: 280px;
+    }
+}
+
+@media screen and (max-width: 702px) {
+    .left-arrows, .right-arrows {
+        /*display: none;*/
+        width: 17vw;
+    }
+
+    .right-header-lines {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .left-arrows, .right-arrows {
+        display: none;
     }
 }
