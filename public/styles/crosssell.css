@@ -114,7 +114,7 @@ body {
     right: 130px;
     top: 673px;
 }
-    
+
 .right-header-lines {
     position: absolute;
     top: 631px;
@@ -346,7 +346,7 @@ body {
 .product-best-value-header {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 15px;
@@ -486,7 +486,7 @@ body {
 .testimonial-dash {
     width: 30px;
     height: 1px;
-    background: #E83136;   
+    background: #E83136;
     margin-right: 10px;
 }
 
@@ -518,7 +518,7 @@ body {
 .load-more-dash {
     width: 72px;
     height: 1px;
-    background: #E83136;   
+    background: #E83136;
     margin-right: 10px;
 }
 
@@ -570,7 +570,6 @@ body {
 }
 
 .questions-dash {
-    /*width: 970px;*/
     width: 82%;
     height: 1px;
     background: #E4E4E4;
@@ -619,7 +618,7 @@ body {
 .question-text {
     margin-left: 160px;
     margin-right: 100px;
-    margin-bottom: 27px;    
+    margin-bottom: 27px;
 }
 
 .to-read {
@@ -641,7 +640,7 @@ body {
 .to-read-dash {
     width: 124px;
     height: 1px;
-    background: #E83136;   
+    background: #E83136;
 }
 
 .footer-list {
@@ -683,7 +682,7 @@ body {
 
 .footer-links-content {
     display: flex;
-    margin-left: 53px;  
+    margin-left: 53px;
     margin-top: 16px;
     margin-right: 41px;
     margin-bottom: 16px;
@@ -745,7 +744,7 @@ body {
     font-size: 13px;
     line-height: 21px;
     color: #E83136;
-}   
+}
 
 .statements-block > span:first-child {
     font-family: Lato;

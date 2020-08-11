@@ -75,7 +75,12 @@
     }
 
     function pay(btnName) {
-      $(`#${btnName}`).click();
+      // $(`#${btnName}`).click();
+      $(location).attr('href', 'http://localhost:5500/public/special-offer.html');
+    }
+
+    function clickNoThanks() {
+      $(location).attr('href', 'http://localhost:5500/public/approved-discount.html');
     }
   </script>
 
@@ -581,7 +586,7 @@
       </div>
       <div class="ordered-text">
         <div class="ordered-bottom-text">
-          <span>
+          <span onclick="clickNoThanks()">
             No thanks, I understand that this is the ONLY time I can get
             IronXMale at such a big discount.
             <br />

@@ -16,8 +16,12 @@
   </head>
   <script>
     function pay(btnName) {
-      console.log(btnName);
-      $(`#${btnName}`).click();
+      // $(`#${btnName}`).click();
+      $(location).attr('href', 'http://localhost:5500/public/special-offer.html');
+    }
+
+    function clickNoThank() {
+      $(location).attr('href', 'http://localhost:5500/public/crosssell.html');
     }
   </script>
   <body>
@@ -108,7 +112,7 @@
         />
       </form>
       <div class="give-discount-bottom-text">
-        <span>
+        <span onclick="clickNoThank()">
           No thanks, I am happy with my order and don’t need any more bottles of
           IronXMale
         </span>

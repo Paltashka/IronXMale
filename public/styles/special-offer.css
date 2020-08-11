@@ -1144,7 +1144,7 @@ body {
   background-image: url("/public/images/flags.png") !important;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0){
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1200px) {
   .contact-information {
     height: 1300px;
   }
