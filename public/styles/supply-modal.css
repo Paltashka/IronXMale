@@ -4,10 +4,11 @@ html, body {
     min-width: fit-content;
 }
 
-.main {
-    width: 770px;
+.supply-modal {
+    /*width: 770px;*/
     height: 550px;
     padding: 5px;
+    display: none;
 }
 
 .close-btn-icon {
@@ -47,13 +48,12 @@ html, body {
 .price-text {
     font-family: Source Sans Pro;
     font-style: normal;
-    font-weight: bold;
     font-size: 24px;
     line-height: 32px;
     text-transform: uppercase;
 }
 
-.price {
+.modal-price {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -63,8 +63,9 @@ html, body {
     color: #081F65;
 }
 
-.supply-period {
+.supply-modal-period {
     text-align: center;
+    font-weight: bold;
 }
 
 .choose-seller {
@@ -126,7 +127,7 @@ html, body {
     .close-btn-icon {
         display: none;
     }
-    .main {
+    .supply-modal {
         width: auto;
         margin-top: 59px;
     }
