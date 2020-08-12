@@ -557,10 +557,7 @@ body {
   height: 220px;
   border-radius: 10px;
   border: 3px solid #fbdb85;
-  padding-left: 3px;
-  padding-right: 3px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 3px;
   margin-top: 85px;
 }
 
@@ -576,7 +573,7 @@ body {
 
 .book {
   position: absolute;
-  left: 172px;
+  left: 115px;
   top: -50px;
 }
 
@@ -622,6 +619,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 26px;
 }
 
 .list-item {

@@ -112,6 +112,14 @@ body {
     color: #2D4193;
 }
 
+.dash {
+    height: 1px;
+    background: rgba(45, 65, 147, 0.1);
+    width: 89%;
+    margin-top: 50px;
+    margin-bottom: 44px;
+}
+
 .thank-you-text-block {
     display: flex;
     flex-direction: column;
@@ -140,12 +148,15 @@ body {
 
 .thank-you-footer {
     display: flex;
-    padding: 50px 61px 80px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    width: 89%;
     flex-direction: column;
 }
 
 .download-wrapper {
     display: flex;
+    width: 87%;
 }
 
 .download-instruction {
@@ -196,6 +207,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    width: 84%;
 }
 
 .signature {
@@ -298,6 +310,15 @@ body {
     .books {
         flex-direction: column;
     }
+
+    .book-text {
+        width: 45%;
+        align-self: center;
+    }
+
+    .book {
+        margin-top: 20px;
+    }
 } 
 
 @media screen and (max-width: 1200px) {
@@ -366,6 +387,11 @@ body {
         align-items: center;
     }
 
+
+    .download-instruction {
+        margin-right: 0;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -386,17 +412,16 @@ body {
     .reader-link a {
         font-size: medium;
     }
+
+    .signature-wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 868px) {
     .thank-you-header span {
         font-size: 27px;
-    }
-}
-
-@media screen and (max-width: 345px) {
-    .signature-wrapper {
-        flex-direction: column;
-        align-items: center;
     }
 }

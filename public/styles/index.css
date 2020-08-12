@@ -251,6 +251,8 @@ body {
     border: 1px solid #E83136;
     box-sizing: border-box;
     border-radius: 60px;
+    position: relative;
+    top: -12px;
 }
 
 .product-discount span {
@@ -518,8 +520,7 @@ body {
 .load-more-dash {
     width: 72px;
     height: 1px;
-    background: #E83136;   
-    margin-right: 10px;
+    background: #E83136;
 }
 
 .load-more span {
