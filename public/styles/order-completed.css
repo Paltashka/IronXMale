@@ -448,7 +448,6 @@ body {
 .name-date-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 21px;
 }
 
 .author-name span {
