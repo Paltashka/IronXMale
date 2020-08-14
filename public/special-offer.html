@@ -145,10 +145,10 @@
     function pay() {
         let isFirstBuy = localStorage.getItem('isFirstBuy');
         if (isFirstBuy === 'true') {
-            $('.redirect-input').val('http://localhost:5500/public/order-completed.html');
+            $('.redirect-input').val('http://test-5427418.herokuapp.com/public/order-completed.html');
             localStorage.setItem('isFirstBuy', JSON.parse('false'));
         } else if (isFirstBuy === 'false') {
-            $('.redirect-input').val('http://localhost:5500/public/thank-you.html');
+            $('.redirect-input').val('http://test-5427418.herokuapp.com/public/thank-you.html');
         }
         switch (id) {
             case 'first-supply':
