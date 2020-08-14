@@ -37,7 +37,6 @@ app.get('/', (req, res) => {
     res.render(__dirname + '/index.html');
 })
 
-app.listen(3000, (err) => {
-  console.log("Listening on port 3000");
+app.listen(process.env.PORT, (err) => {
   if (err) console.log(err);
 });
