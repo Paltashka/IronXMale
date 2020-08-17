@@ -82,8 +82,7 @@
         }, 1000);
     }
 
-    function pay(btnName) {
-        // $(`#${btnName}`).click();
+    function pay() {
         $(location).attr('href', 'http://test-5427418.herokuapp.com/public/special-offer.html');
     }
 
@@ -252,7 +251,7 @@
                     <img src="images/rectangle-right.svg" class="rectangle-right"/>
                 </div>
             </div>
-            <div class="checkout-block" onclick="pay('paypal_click')">
+            <div class="checkout-block" onclick="pay()">
                 <img src="images/shopping-cart.svg"/>
                 <span>Proceed to checkout</span>
             </div>
@@ -576,7 +575,7 @@
                     <img src="images/rectangle-right.svg" class="rectangle-right"/>
                 </div>
             </div>
-            <div class="checkout-block" onclick="pay('paypal_click')">
+            <div class="checkout-block" onclick="pay()">
                 <img src="images/shopping-cart.svg"/>
                 <span>Proceed to checkout</span>
             </div>
