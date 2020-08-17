@@ -30,9 +30,12 @@
     <script src="js/handleLeave.js"></script>
 </head>
 <script>
-    function pay(btnName) {
-        // $(`#${btnName}`).click();
+    function pay() {
         $(location).attr('href', 'http://test-5427418.herokuapp.com/public/order-completed.html');
+    }
+
+    function handleNotes() {
+        $(location).attr('href', 'http://test-5427418.herokuapp.com/public/');
     }
 </script>
 <body>
@@ -176,7 +179,7 @@
                 <div class="cart-logo">
                     <img src="images/cart-logo.svg"/>
                 </div>
-                <div class="add-to-cart-button" onclick="pay('paypal_click_1')">
+                <div class="add-to-cart-button" onclick="pay()">
                     <img src="images/shopping-cart.svg"/>
                     <span>Add to cart</span>
                 </div>
@@ -209,7 +212,7 @@
                     <div class="cart-logo">
                         <img src="images/cart-logo.svg"/>
                     </div>
-                    <div class="add-to-cart-button" onclick="pay('paypal_click_2')">
+                    <div class="add-to-cart-button" onclick="pay()">
                         <img src="images/shopping-cart.svg"/>
                         <span>Add to cart</span>
                     </div>
@@ -238,7 +241,7 @@
                 <div class="cart-logo">
                     <img src="images/cart-logo.svg"/>
                 </div>
-                <div class="add-to-cart-button" onclick="pay('paypal_click_3')">
+                <div class="add-to-cart-button" onclick="pay()">
                     <img src="images/shopping-cart.svg"/>
                     <span>Add to cart</span>
                 </div>
@@ -633,7 +636,7 @@
                 <div class="cart-logo">
                     <img src="images/cart-logo.svg"/>
                 </div>
-                <div class="add-to-cart-button" onclick="pay('paypal_click_1')">
+                <div class="add-to-cart-button" onclick="pay()">
                     <img src="images/shopping-cart.svg"/>
                     <span>Add to cart</span>
                 </div>
@@ -666,7 +669,7 @@
                     <div class="cart-logo">
                         <img src="images/cart-logo.svg"/>
                     </div>
-                    <div class="add-to-cart-button" onclick="pay('paypal_click_2')">
+                    <div class="add-to-cart-button" onclick="pay()">
                         <img src="images/shopping-cart.svg"/>
                         <span>Add to cart</span>
                     </div>
@@ -695,7 +698,7 @@
                 <div class="cart-logo">
                     <img src="images/cart-logo.svg"/>
                 </div>
-                <div class="add-to-cart-button" onclick="pay('paypal_click_3')">
+                <div class="add-to-cart-button" onclick="pay()">
                     <img src="images/shopping-cart.svg"/>
                     <span>Add to cart</span>
                 </div>
@@ -717,8 +720,7 @@
         </div>
     </div>
     <div class="to-read">
-        <span>Click Here to Read</span>
-        <div class="to-read-dash"></div>
+        <p>Video not working? In a hurry? <span class="underlined" onclick="handleNotes()">Click here to read the Derek's Notes version.</span></p>
     </div>
     <div class="footer">
         <div class="footer-left-triangle"></div>

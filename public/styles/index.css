@@ -631,12 +631,17 @@ body {
     margin-top: 42px;
 }
 
-.to-read span {
+.to-read p {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
     line-height: 21px;
+}
+
+.underlined {
+    text-decoration: underline;
+    text-decoration-color: #E83136;
 }
 
 .to-read-dash {
