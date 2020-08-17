@@ -494,4 +494,35 @@ html, body {
     .footer {
         flex-direction: column-reverse;
     }
-}   
+}
+
+@media screen and (max-width: 475px) {
+    .retail-discount {
+        width: auto;
+    }
+
+    .give-discount-block {
+        height: auto;
+    }
+
+    .retail-price {
+        width: 90%;
+    }
+
+    .discount-text {
+        width: 80%;
+    }
+
+    .discount-dash-wrapper {
+        width: 80%;
+    }
+
+    .product-img-block img {
+        width: 320px;
+    }
+
+    .discount-text-block {
+        width: 90%;
+        text-align: center;
+    }
+}
