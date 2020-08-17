@@ -152,6 +152,7 @@ body {
     font-size: 28px;
     line-height: 42px;
     text-align: center;
+    width: 99%;
 }
 
 .section-content {
@@ -174,6 +175,7 @@ body {
     border-radius: 20px;
     height: 266px;
     border: 2px solid #DB1220;
+    margin-left: 85px;
 }
 
 .supply h1 {
@@ -313,6 +315,7 @@ body {
 
 .no-buy {
     margin-top: 28px;
+    cursor: pointer;
 }
 
 .no-buy p {

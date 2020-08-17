@@ -40,6 +40,10 @@
     function pay() {
         $(location).attr('href', 'http://test-5427418.herokuapp.com/public/order-completed.html');
     }
+
+    function clickNoThanks() {
+        $(location).attr('href', 'http://test-5427418.herokuapp.com/public/');
+    }
 </script>
 <body>
 <noscript
@@ -440,7 +444,7 @@
             <h1>Buy Iron X Male Right Now</h1>
         </div>
     </div>
-    <div class="no-buy">
+    <div class="no-buy" onclick="clickNoThanks()">
         <p>Sorry I’m happy with my order and I do not wish to add any more</p>
     </div>
     <div class="statement-block">
