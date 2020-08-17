@@ -30,8 +30,10 @@
     <script src="js/handleLeave.js"></script>
 </head>
 <script>
+    localStorage.setItem('buyCounter', '1');
+
     function pay() {
-        $(location).attr('href', 'http://test-5427418.herokuapp.com/public/order-completed.html');
+        $(location).attr('href', 'http://test-5427418.herokuapp.com/public/special-offer.html');
     }
 
     function handleNotes() {

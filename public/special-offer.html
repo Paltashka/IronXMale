@@ -60,7 +60,6 @@
     </script>
 </head>
 <script>
-    localStorage.setItem('isFirstBuy', JSON.parse("true"));
     let isChecked = false;
     const cssClass = ' supply-radiobtn-checked';
 
@@ -143,11 +142,13 @@
     }
 
     function pay() {
-        let isFirstBuy = localStorage.getItem('isFirstBuy');
-        if (isFirstBuy === 'true') {
+        let buyCounter = localStorage.getItem('buyCounter');
+        if (buyCounter === '1') {
             $('.redirect-input').val('http://test-5427418.herokuapp.com/public/order-completed.html');
-            localStorage.setItem('isFirstBuy', JSON.parse('false'));
-        } else if (isFirstBuy === 'false') {
+            localStorage.setItem('buyCounter', '2');
+        } else if (buyCounter === '2') {
+            $('.redirect-input').val('http://test-5427418.herokuapp.com/public/crosssell.html');
+        } else if (buyCounter === '3') {
             $('.redirect-input').val('http://test-5427418.herokuapp.com/public/thank-you.html');
         }
         switch (id) {
