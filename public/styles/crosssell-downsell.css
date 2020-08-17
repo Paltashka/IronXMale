@@ -1,6 +1,5 @@
 html, body {
     margin: auto;
-    padding: auto;
     min-width: fit-content;
 }
 
@@ -37,7 +36,6 @@ html, body {
 .content {
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     margin-top: 65px;
@@ -46,12 +44,161 @@ html, body {
 
 .discount-product {
     display: flex;
+    align-items: center;
 }
 
 .discount-text-block {
     display: flex;
     flex-direction: column;
     margin-left: 52px;
+}
+
+.discount-text-block h1 {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+
+.discount-text-block p {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 46px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.discount-dash-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.discount-dash-text {
+    background: #CD3535;
+    border-radius: 3px;
+    width: 86px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-dash-text span {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.discount-text {
+    width: 50%;
+}
+
+.discount-text h1 {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.discount-text-subtext {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.discount-text p {
+    font-family: Source Sans Pro, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.discount-text-selected {
+    background: rgba(251, 219, 133, 0.5);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.retail-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(205, 53, 53, 0.03);
+    border-radius: 10px;
+    width: 50%;
+}
+
+.retail-price-heading {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.retail-discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #CD3535;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 82%;
+    margin-bottom: 55px;
+}
+
+.retail-discount h2 {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: center;
+    color: #CD3535;
+}
+
+.retail-discount h1 {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 21px;
+    text-align: center;
+    color: #CD3535;
+}
+
+.retail-discount p {
+    font-family: Source Sans Pro, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 }
 
 .title span {
@@ -97,11 +244,10 @@ html, body {
 }
 
 .discount-dash {
-    width: 570px;
+    width: 100%;
     height: 1px;
     background: #C4C4C4;
     opacity: 0.2;
-    margin-top: 49px;
 }
 
 .discount-footer-text {
@@ -138,7 +284,7 @@ html, body {
 }
 
 .give-discount-block {
-    height: 172px;
+    height: 120px;
     width: 970px;
     display: flex;
     justify-content: center;
@@ -149,13 +295,15 @@ html, body {
     margin-top: 30px;
 }
 
-.give-discount-block span {
-    font-family: Work Sans;
+.give-discount-block p {
+    font-family: Work Sans, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
-    line-height: 21px;
+    line-height: 30px;
     color: #FFFFFF;
+    width: 69%;
+    text-align: center;
 }
 
 .underlined {
@@ -173,7 +321,7 @@ html, body {
 }
 
 .give-discount-btn {
-    width: 364px;
+    width: 55%;
     height: 62px;
     background: #CD3535;
     border-radius: 10px;
@@ -181,6 +329,7 @@ html, body {
     cursor: pointer;
     margin-top: 30px;
     border: 0;
+    margin-bottom: 30px;
 }
 
 .give-discount-btn span {

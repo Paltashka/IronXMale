@@ -45,6 +45,7 @@ html, body {
 .discount-product {
     display: flex;
     align-items: center;
+    width: 54%;
 }
 
 .discount-text-block {
