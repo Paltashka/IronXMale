@@ -7,6 +7,20 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
+}
+
+.cross-sell-bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cross-sell-bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(-1, 1);
 }
 
 .crosssell-header {
@@ -587,5 +601,9 @@ body {
 
     .section-heading-second-row {
         width: auto;
+    }
+
+    .cross-sell-bg-left, .cross-sell-bg-right {
+        display: none;
     }
 }

@@ -505,7 +505,7 @@ html, body {
     }
 
     .give-discount-btn {
-        width: auto;
+        width: 100%;
         border-radius: 0;
     }
 
