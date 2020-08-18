@@ -63,7 +63,18 @@ html, body {
     text-transform: uppercase;
 }
 
-.discount-text-block p {
+.exclusive-discount p {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 46px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.exclusive-discount-mobile {
+    display: none;
     font-family: Work Sans, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -260,9 +271,14 @@ html, body {
     padding-right: 8px;
 }
 
+.give-discount-block-wrapper {
+    width: 50%;
+}
+
 .give-discount-block {
     height: 120px;
-    width: 970px;
+    width: 100%;
+    /*width: 970px;*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -405,6 +421,19 @@ html, body {
     color: #000000;
 }
 
+@media screen and (max-width: 986px) {
+    .give-discount-block {
+        height: auto;
+    }
+    /*.give-discount-block p {*/
+    /*    font-size: 22px;*/
+    /*}*/
+
+    /*.underlined {*/
+    /*    font-size: 22px;*/
+    /*}*/
+}
+
 @media screen and (max-width: 768px) {
     .header img {
         margin-left: 32px;
@@ -435,6 +464,7 @@ html, body {
     }
     .discount-text-block {
         margin-left: 0;
+        align-items: center;
     }
     .discount-dash {
         width: 90%;
@@ -445,9 +475,15 @@ html, body {
     .discount-text-block-footer {
         text-align: center;
     }
+
     .give-discount-block {
         border-radius: 0px;
     }
+
+    .give-discount-block p {
+        width: 98%;
+    }
+
     .give-discount-block {
         width: 100%;
         text-align: center;
@@ -465,6 +501,18 @@ html, body {
         width: auto;
     }
 
+    .exclusive-discount-mobile {
+        display: flex;
+        text-align: center;
+    }
+
+    .exclusive-discount {
+        display: none;
+    }
+
+    .discount-product {
+        width: auto;
+    }
 
     .give-discount-bottom-text {
         width: 320px;
@@ -487,6 +535,12 @@ html, body {
         width: auto;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .give-discount-block-wrapper {
+        width: 100%;
     }
 }
 
