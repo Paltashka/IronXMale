@@ -73,93 +73,7 @@
         <img src="images/header-lines.svg" class="right-header-lines">
     </div>
     <div class="product-container">
-        <div class="product-item">
-            <form
-                    target="paypal"
-                    action="https://www.paypal.com/cgi-bin/webscr"
-                    method="post"
-                    class="add-to-cart-paypal"
-            >
-                <input type="hidden" name="cmd" value="_s-xclick"/>
-                <input
-                        type="hidden"
-                        name="hosted_button_id"
-                        value="F27TV8BJ44BPC"
-                />
-                <input
-                        id="paypal_click_1"
-                        type="image"
-                        src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif"
-                        border="0"
-                        name="submit"
-                        alt="PayPal – The safer, easier way to pay online!"
-                />
-                <img
-                        alt=""
-                        border="0"
-                        src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif"
-                        width="1"
-                        height="1"
-                />
-            </form>
-
-            <form
-                    target="paypal"
-                    action="https://www.paypal.com/cgi-bin/webscr"
-                    method="post"
-                    class="add-to-cart-paypal"
-            >
-                <input type="hidden" name="cmd" value="_s-xclick"/>
-                <input
-                        type="hidden"
-                        name="hosted_button_id"
-                        value="LAH7U2TH4U62S"
-                />
-                <input
-                        id="paypal_click_2"
-                        type="image"
-                        src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif"
-                        border="0"
-                        name="submit"
-                        alt="PayPal – The safer, easier way to pay online!"
-                />
-                <img
-                        alt=""
-                        border="0"
-                        src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif"
-                        width="1"
-                        height="1"
-                />
-            </form>
-
-            <form
-                    target="paypal"
-                    action="https://www.paypal.com/cgi-bin/webscr"
-                    method="post"
-                    class="add-to-cart-paypal"
-            >
-                <input type="hidden" name="cmd" value="_s-xclick"/>
-                <input
-                        type="hidden"
-                        name="hosted_button_id"
-                        value="4HE6TN57FBCPU"
-                />
-                <input
-                        id="paypal_click_3"
-                        type="image"
-                        src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif"
-                        border="0"
-                        name="submit"
-                        alt="PayPal – The safer, easier way to pay online!"
-                />
-                <img
-                        alt=""
-                        border="0"
-                        src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif"
-                        width="1"
-                        height="1"
-                />
-            </form>
+        <div class="product-item" onclick="pay()">
             <div class="product-header">
                 <span>1 Month Supply</span>
             </div>
@@ -181,13 +95,13 @@
                 <div class="cart-logo">
                     <img src="images/cart-logo.svg"/>
                 </div>
-                <div class="add-to-cart-button" onclick="pay()">
+                <div class="add-to-cart-button">
                     <img src="images/shopping-cart.svg"/>
                     <span>Add to cart</span>
                 </div>
             </div>
         </div>
-        <div class="product-best-value-wrapper">
+        <div class="product-best-value-wrapper" onclick="pay()">
             <div class="product-best-value-header">
                 <img src="images/best-value-logo.svg"/>
                 <span>Best Value</span>
@@ -214,14 +128,14 @@
                     <div class="cart-logo">
                         <img src="images/cart-logo.svg"/>
                     </div>
-                    <div class="add-to-cart-button" onclick="pay()">
+                    <div class="add-to-cart-button">
                         <img src="images/shopping-cart.svg"/>
                         <span>Add to cart</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="product-item">
+        <div class="product-item" onclick="pay()">
             <div class="product-header">
                 <span>3 Month Supply</span>
             </div>
@@ -243,7 +157,7 @@
                 <div class="cart-logo">
                     <img src="images/cart-logo.svg"/>
                 </div>
-                <div class="add-to-cart-button" onclick="pay()">
+                <div class="add-to-cart-button">
                     <img src="images/shopping-cart.svg"/>
                     <span>Add to cart</span>
                 </div>
@@ -387,13 +301,13 @@
             </div>
         </div>
     </div>
-    <div class="load-more">
-        <img src="images/transparent-ellipse.svg"/>
-        <img src="images/ellipse.svg" class="ellipse"/>
-        <img src="images/load-more-arrows.svg" class="load-more-arrows"/>
-        <span>Load More</span>
-        <div class="load-more-dash"></div>
-    </div>
+<!--    <div class="load-more">-->
+<!--        <img src="images/transparent-ellipse.svg"/>-->
+<!--        <img src="images/ellipse.svg" class="ellipse"/>-->
+<!--        <img src="images/load-more-arrows.svg" class="load-more-arrows"/>-->
+<!--        <span>Load More</span>-->
+<!--        <div class="load-more-dash"></div>-->
+<!--    </div>-->
     <div class="questions-block">
         <div class="questions-header">
             <span>Frequently Asked Questions</span>
@@ -616,7 +530,7 @@
         <img src="images/header-arrow-1.svg" class="product-left-arrow-4">
         <img src="images/header-arrow-3.svg" class="product-left-arrow-5">
         <img src="images/header-arrow-1.svg" class="product-left-arrow-6">
-        <div class="product-item">
+        <div class="product-item" onclick="pay()">
             <div class="product-header">
                 <span>1 Month Supply</span>
             </div>
@@ -638,13 +552,13 @@
                 <div class="cart-logo">
                     <img src="images/cart-logo.svg"/>
                 </div>
-                <div class="add-to-cart-button" onclick="pay()">
+                <div class="add-to-cart-button">
                     <img src="images/shopping-cart.svg"/>
                     <span>Add to cart</span>
                 </div>
             </div>
         </div>
-        <div class="product-best-value-wrapper">
+        <div class="product-best-value-wrapper" onclick="pay()">
             <div class="product-best-value-header">
                 <img src="images/best-value-logo.svg"/>
                 <span>Best Value</span>
@@ -671,14 +585,14 @@
                     <div class="cart-logo">
                         <img src="images/cart-logo.svg"/>
                     </div>
-                    <div class="add-to-cart-button" onclick="pay()">
+                    <div class="add-to-cart-button">
                         <img src="images/shopping-cart.svg"/>
                         <span>Add to cart</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="product-item">
+        <div class="product-item" onclick="pay()">
             <div class="product-header">
                 <span>1 Month Supply</span>
             </div>
@@ -700,7 +614,7 @@
                 <div class="cart-logo">
                     <img src="images/cart-logo.svg"/>
                 </div>
-                <div class="add-to-cart-button" onclick="pay()">
+                <div class="add-to-cart-button">
                     <img src="images/shopping-cart.svg"/>
                     <span>Add to cart</span>
                 </div>

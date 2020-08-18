@@ -15,7 +15,8 @@
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-TNZXGND');</script>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width"/>
+<!--    <meta name="viewport" content="width=1000">-->
     <link rel="stylesheet" href="styles/crosssell.css"/>
     <link rel="stylesheet" href="styles/order-completed.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -42,6 +43,27 @@
 
     function clickNoThanks() {
         $(location).attr('href', 'http://test-5427418.herokuapp.com/public/crosssell-downsell.html');
+    }
+
+    let slideIndex = 1;
+    showDivs(slideIndex);
+
+    function changeDivs(n) {
+        showDivs((slideIndex += n));
+    }
+
+    function showDivs(n) {
+        const x = document.getElementsByClassName('slide');
+        if (n > x.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = x.length;
+        }
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+        }
+        x[slideIndex - 1].style.display = 'flex';
     }
 </script>
 <body>
@@ -143,7 +165,7 @@
             <img src="images/left-bracket.svg" alt="">
             <div class="section-header-text">
                 <h1 class="section-heading">SHOOT Your Testosterone THROUGH THE ROOF and</h1>
-                <h1 class="section-heading">Become a Real Man FASTER Than You Ever THOUGHT POSSIBLE.</h1>
+                <h1 class="section-heading section-heading-second-row">Become a Real Man FASTER Than You Ever THOUGHT POSSIBLE.</h1>
             </div>
             <img src="images/right-bracket.svg" alt="">
         </div>
@@ -263,6 +285,58 @@
             <p>But don’t just take my word for it...</p>
         </div>
     </div>
+    <div class="slider">
+        <div class="comment-item slide">
+            <div class="comment-text">
+              <span>
+                “I started using Testoboost after over a year on Iron X Male alone, and the changes I’ve seen in myself since – I mean – it’s like night and day. I’d been making solid progress, but once I added this product I can only describe it as lifting my foot off the brakes and hitting the gas. I’ve seen more positive changes in these last few months than in the entire last year, and I can honestly say, it’s all the result of my higher testosterone levels. This stuff is incredible.
+              </span>
+            </div>
+            <div class="author">
+                <div class="name-date-wrapper">
+                    <div class="author-name">
+                        <span>Jerry F., Tulsa, Oklahoma.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-item slide">
+            <div class="comment-text">
+              <span>
+                “I only wish I started using Testobooster sooner, because once I did I felt like everything in my life went up a notch. I recover faster from every workout, I’ve got more energy and I feel more alive. Everyone around me keeps asking for “the big secret,” and well, here it is. You deserve the changes you’ve got coming, and Testobooster will get you there faster.”
+              </span>
+            </div>
+            <div class="author">
+                <div class="name-date-wrapper">
+                    <div class="author-name">
+                        <span>George L., Denver, Colorado.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-item slide">
+            <div class="comment-text">
+              <span>
+                “When I was diagnosed with low testosterone it was a harsh reality check. I finally realized that there really was something different with me. It’s also why I could never really keep up with my friends. They’d spend a few weeks in the gym and muscles were already showing, while I grinded for months and you’d never even notice. It hurt, and for years I struggled not knowing what to do, until I found Testoboost. I’ll admit, I was skeptical at first, but seeing the changes in my own mirror has been almost unbelievable. This product literally changed my life, and I remain your biggest supporter, and biggest fan. Thank you James. Thank you.
+              </span>
+            </div>
+            <div class="author">
+                <div class="name-date-wrapper">
+                    <div class="author-name">
+                        <span>Darren M., Las Vegas, Nevada.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-arrows">
+            <div class="left-arrow">
+                <img src="images/left-arrow.svg" onclick="changeDivs(-1)"/>
+            </div>
+            <div class="right-arrow">
+                <img src="images/right-arrow.svg" onclick="changeDivs(+1)"/>
+            </div>
+        </div>
+    </div>
     <div class="comments-wrapper">
         <div class="comments">
             <div class="comment-item">
@@ -315,7 +389,7 @@
             <div class="section-header-text">
                 <h1 class="section-heading">Do You Want to GET A WINNING EDGE Over Every
                 </h1>
-                <h1 class="section-heading">Other Man, and Finally START PERFORMING AT YOUR PEAK?</h1>
+                <h1 class="section-heading section-heading-second-row">Other Man, and Finally START PERFORMING AT YOUR PEAK?</h1>
             </div>
             <img src="images/right-bracket.svg" alt="">
         </div>
@@ -338,7 +412,7 @@
             <div class="section-header-text">
                 <h1 class="section-heading">As a Thank You for Your Order Today, I’d Like to Give
                 </h1>
-                <h1 class="section-heading">You Access to an EXCLUSIVE DEAL on This LIFE-CHANGING Product,</h1>
+                <h1 class="section-heading section-heading-second-row">You Access to an EXCLUSIVE DEAL on This LIFE-CHANGING Product,</h1>
             </div>
             <img src="images/right-bracket.svg" alt="">
         </div>
@@ -389,7 +463,7 @@
             <img src="images/left-bracket.svg" alt="">
             <div class="section-header-text">
                 <h1 class="section-heading">Try TestoBoost Yourself with ZERO RISK for the </h1>
-                <h1 class="section-heading">next THREE MONTHS With Our 90-Day 100% Money-Back Guarantee</h1>
+                <h1 class="section-heading section-heading-second-row">next THREE MONTHS With Our 90-Day 100% Money-Back Guarantee</h1>
             </div>
             <img src="images/right-bracket.svg" alt="">
         </div>

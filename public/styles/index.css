@@ -229,6 +229,7 @@ body {
     margin-right: 30px;
     margin-left: 30px;
     padding: 15px;
+    cursor: pointer;
 }
 
 .product-image-wrapper {
@@ -343,6 +344,7 @@ body {
     background-color: #E83136;
     border-radius: 20px;
     margin-top: 34px;
+    cursor: pointer;
 }
 
 .product-best-value-header {
@@ -926,9 +928,9 @@ body {
     .questions-dash {
         width: 250px;
     }
-    .product-best-value-wrapper {
-        height: 550px;
-    }
+    /*.product-best-value-wrapper {*/
+    /*    height: 550px;*/
+    /*}*/
     .testimonial-header span {
         font-size: 28px;
     }
